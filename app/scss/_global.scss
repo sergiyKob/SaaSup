@@ -3,10 +3,12 @@ html {
 }
 
 body {
+  font-family: "Nunito", sans-serif;
   height: 100%;
   background-color: $background-color;
-  color: $dark;
+  color: $color-secondary-3;
   font-size: $font-size;
+  font-weight: 400;
   line-height: $line-height;
 }
 
@@ -22,12 +24,6 @@ body {
 
 .footer {
   flex: 0 0 auto;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .sr-only {
@@ -47,4 +43,90 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 1430px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
+.logo {
+  border-radius: 39px;
+  transition: all 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
+  }
+  &:active {
+    opacity: 0.5;
+  }
+
+  &__img {
+  }
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 1.39;
+  font-weight: 700;
+  color: $color-primary-2;
+  padding: 25px 54px;
+  border-radius: 39px;
+  transition: all 0.3s;
+
+  &--white {
+    background-color: $color-secondary-4;
+
+    &:hover {
+      background-color: $color-primary-2;
+      color: $color-secondary-4;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
+    }
+
+    &:active {
+      background-color: rgba(36, 35, 49, 0.5);
+    }
+  }
+
+  &--blue {
+    color: $color-secondary-4;
+    background-color: $color-primary-1;
+
+    &:hover {
+      background-color: #270AD8;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(39, 10, 216, 1);
+
+    }
+
+    &:active {
+      background-color: rgba(39, 10, 216, 0.5);
+    }
+  }
+
+  &--border {
+    border: 1px solid rgba(211, 211, 211, 1);
+  }
+
+  &--gray {
+    background-color: rgba(244, 244, 244, 1);
+  }
+}
+
+.title {
+  font-size: 75px;
+  line-height: 1.1;
+  font-weight: 800;
+  color: $color-primary-2;
+
+  &--sm {
+    font-size: 50px;
+  }
+}
