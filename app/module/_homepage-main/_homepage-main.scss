@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: 1386px 705px;
   background-position: top right;
-  padding-top: 277px;
+  padding: 277px 0 0 0;
   position: relative;
   overflow: hidden;
 
@@ -23,7 +23,6 @@
   }
 
   &__text {
-    font-size: 25px;
     margin-bottom: 48px;
   }
 
@@ -43,7 +42,7 @@
     transition: all 0.3s;
 
     &:hover {
-      background-color: rgba(36, 35, 49, 0.9);
+      background-color: rgba(36, 35, 49, 1);
       color: $color-secondary-4;
       .homepage-main__link-icon {
         background-color: $color-secondary-4;

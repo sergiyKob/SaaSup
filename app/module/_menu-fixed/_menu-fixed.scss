@@ -1,18 +1,19 @@
-.menu-fixed {
-  &::after {
-    content: "";
-    position: fixed;
-    background-color: #f9faff;
-    -webkit-box-shadow: 0 0 4px rgb(0 0 0 / 8%);
-    box-shadow: 0 0 4px rgb(0 0 0 / 8%);
-    top: 0;
-    left: 0;
-    width: 200%;
-    height: 90px;
-    z-index: -2;
+// .menu-fixed {
+//   &::after {
+//     content: "";
+//     position: fixed;
+//     background-color: rgba(105, 80, 255, 1);
+//     -webkit-box-shadow: 0 0 4px rgb(0 0 0 / 8%);
+//     box-shadow: 0 0 4px rgb(0 0 0 / 8%);
+//     top: 0;
+//     left: 0;
+//     width: 200%;
+//     height: 113px;
+//     z-index: -2;
 
-    @media (max-width: $md) {
-      height: 64px;
-    }
-  }
-}
+//     @media (max-width: $md) {
+//       height: 64px;
+//     }
+//   }
+// }
+

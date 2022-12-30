@@ -1,3 +1,24 @@
-.homepage-features__title {
-  
+.homepage-features {
+
+  &__top {
+    max-width: 639px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 46px;
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {}
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {}
 }
+
+

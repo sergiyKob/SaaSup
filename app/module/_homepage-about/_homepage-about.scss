@@ -1,0 +1,70 @@
+.homepage-about {
+   position: relative;
+
+   &::before {
+      @include pseudo;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 368px;
+      height: 750px;
+      background-image: url("../images/decor-about.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+   }
+
+   &__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__content {
+      max-width: 600px;
+      margin-right: 24px;
+   }
+
+   &__title {
+   }
+
+   &__subtitle {
+      margin-bottom: 26px;
+   }
+
+   &__text {
+      margin-bottom: 42px;
+   }
+
+   &__content-bottom {
+      padding-left: 115px;
+      position: relative;
+
+      &::before {
+         @include pseudo;
+         top: 0;
+         left: 0;
+         width: 96px;
+         height: 103px;
+         background-image: url("../images/icons/icon-coins.svg");
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+      }
+
+      &-title {
+         font-size: 30px;
+         line-height: 1.1;
+         font-weight: 700;
+         color: $color-primary-2;
+         margin-bottom: 10px;
+      }
+
+      &-text {
+      }
+   }
+
+   &__img {
+   }
+}

@@ -1,132 +1,221 @@
 html {
-  height: 100%;
+   height: 100%;
 }
 
 body {
-  font-family: "Nunito", sans-serif;
-  height: 100%;
-  background-color: $background-color;
-  color: $color-secondary-3;
-  font-size: $font-size;
-  font-weight: 400;
-  line-height: $line-height;
+   font-family: "Nunito", sans-serif;
+   height: 100%;
+   background-color: $background-color;
+   color: $color-secondary-3;
+   font-size: $font-size;
+   font-weight: 400;
+   line-height: $line-height;
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
 }
 
 .main {
-  flex: 1 0 auto;
+   flex: 1 0 auto;
 }
 
 .footer {
-  flex: 0 0 auto;
+   flex: 0 0 auto;
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
 }
 
 .lock {
-  overflow: hidden;
+   overflow: hidden;
 }
 
 .container {
-  max-width: 1430px;
-  margin: 0 auto;
-  padding: 0 15px;
+   max-width: 1430px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.section {
+   padding: 100px 0;
 }
 
 .logo {
-  border-radius: 39px;
-  transition: all 0.3s;
+   border-radius: 39px;
+   transition: all 0.3s;
 
-  &:hover {
-    opacity: 0.7;
-  }
-  &:focus {
-    box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
-  }
-  &:active {
-    opacity: 0.5;
-  }
+   &:hover {
+      opacity: 0.7;
+   }
+   &:focus {
+      box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
+   }
+   &:active {
+      opacity: 0.5;
+   }
 
-  &__img {
-  }
+   &__img {
+   }
 }
 
 .btn {
-  font-size: 18px;
-  line-height: 1.39;
-  font-weight: 700;
-  color: $color-primary-2;
-  padding: 25px 54px;
-  border-radius: 39px;
-  transition: all 0.3s;
+   font-size: 18px;
+   line-height: 1.39;
+   font-weight: 700;
+   color: $color-primary-2;
+   padding: 25px 54px;
+   border-radius: 39px;
+   transition: all 0.3s;
 
-  &--white {
-    background-color: $color-secondary-4;
+   &--white {
+      background-color: $color-secondary-4;
 
-    &:hover {
-      background-color: $color-primary-2;
+      &:hover {
+         background-color: $color-primary-2;
+         color: $color-secondary-4;
+      }
+
+      &:focus {
+         box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
+      }
+
+      &:active {
+         background-color: rgba(36, 35, 49, 0.5);
+      }
+   }
+
+   &--blue {
       color: $color-secondary-4;
-    }
+      background-color: $color-primary-1;
 
-    &:focus {
-      box-shadow: 0px 0px 0px 3px rgba(82, 54, 255, 0.5);
-    }
+      &:hover {
+         background-color: #270ad8;
+      }
 
-    &:active {
-      background-color: rgba(36, 35, 49, 0.5);
-    }
-  }
+      &:focus {
+         box-shadow: 0px 0px 0px 3px rgba(39, 10, 216, 1);
+      }
 
-  &--blue {
-    color: $color-secondary-4;
-    background-color: $color-primary-1;
+      &:active {
+         background-color: rgba(39, 10, 216, 0.5);
+      }
+   }
 
-    &:hover {
-      background-color: #270AD8;
-    }
+   &--border {
+      border: 1px solid rgba(211, 211, 211, 1);
+   }
 
-    &:focus {
-      box-shadow: 0px 0px 0px 3px rgba(39, 10, 216, 1);
+   &--gray {
+      background-color: rgba(244, 244, 244, 1);
+   }
 
-    }
+   &--black {
+      color: $color-secondary-4;
+      background-color: $color-primary-2;
 
-    &:active {
-      background-color: rgba(39, 10, 216, 0.5);
-    }
-  }
+      &:hover {
+         color: $color-primary-2;
+         background-color: $color-secondary-4;
+         box-shadow: 0px 0px 0px 3px rgba(36, 35, 49, 1);
+      }
 
-  &--border {
-    border: 1px solid rgba(211, 211, 211, 1);
-  }
-
-  &--gray {
-    background-color: rgba(244, 244, 244, 1);
-  }
+      &:active {
+         background-color: rgba(36, 35, 49, 0.8);
+      }
+   }
 }
 
-.title {
-  font-size: 75px;
-  line-height: 1.1;
-  font-weight: 800;
-  color: $color-primary-2;
+.title-page,
+.subtitle {
+   line-height: 1.1;
+   font-weight: 800;
+   color: $color-primary-2;
+}
 
-  &--sm {
-    font-size: 50px;
-  }
+.title-page {
+   font-size: 75px;
+}
+
+.subtitle {
+   font-size: 50px;
+}
+
+.title-section {
+   display: inline-block;
+   font-size: 18px;
+   line-height: 1.39;
+   font-weight: 700;
+   padding: 25px 46px;
+   margin-bottom: 30px;
+   border-radius: 39px;
+   background-color: $color-secondary-2;
+   color: $color-primary-1;
+}
+
+.card-features {
+   padding: 78px 33px 52px;
+   border-radius: 40px;
+   max-width: 453px;
+   height: 100%;
+   text-align: center;
+   transition: all 0.3s;
+
+   &:hover {
+      background-color: rgba(249, 249, 249, 1);
+
+      .card-features__link {
+         color: $color-primary-1;
+      }
+   }
+
+   &__img {
+      margin-bottom: 43px;
+      width: 359px;
+      height: 254px;
+      position: relative;
+
+      img {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__title {
+      font-size: 30px;
+      line-height: 1.1;
+      font-weight: 700;
+      color: $color-primary-2;
+      margin-bottom: 23px;
+   }
+
+   &__text {
+      margin-bottom: 45px;
+   }
+
+   &__link {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 1.39;
+      font-weight: 700;
+      color: $color-primary-2;
+      text-decoration: underline;
+      transition: color 0.3s;
+   }
 }

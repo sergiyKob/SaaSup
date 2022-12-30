@@ -6,13 +6,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 60px 15px;
-  position: fixed;
+  // position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   max-width: 1430px;
   margin: 0 auto;
   z-index: 100;
+  transition: all 0.3s;
+
+  // &.menu-fixed {
+  // padding: 15px 15px;
+
+  // }
 
   &__inner {
     display: flex;
