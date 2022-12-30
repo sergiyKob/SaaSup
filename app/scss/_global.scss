@@ -219,3 +219,50 @@ body {
       transition: color 0.3s;
    }
 }
+
+//---- slick-button ----//
+
+.slick-prev,
+.slick-next {
+  @extend %center;
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  transition: all 0.3s;
+  position: absolute;
+  top: 22%;
+  transform: translateY(-50%);
+  z-index: 100;
+
+  &:hover {
+    background-color: rgba(104, 80, 255, 1);  
+  }
+
+  &:focus {
+    background-color: rgba(104, 80, 255, 1);
+  }
+
+  &:active {
+    background-color: rgba(104, 80, 255, 0.5);
+  }
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-arrow-next,
+.slick-arrow-prev {
+  width: 24px;
+  height: 24px;
+  fill: rgba(255, 255, 255, 1);
+}
+
+.slick-arrow-next {
+  transform: rotate(180deg);
+}
+
