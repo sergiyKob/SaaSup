@@ -1,5 +1,5 @@
 .homepage-features {
-
+    
   &__top {
     max-width: 639px;
     margin: 0 auto;
@@ -15,7 +15,9 @@
 
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   &__card {}

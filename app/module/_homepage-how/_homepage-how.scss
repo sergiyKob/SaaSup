@@ -1,99 +1,157 @@
 .homepage-how {
-   &__top {
-      max-width: 625px;
-      margin: 0 auto;
-      text-align: center;
-      margin-bottom: 50px;
-   }
+    &__top {
+        max-width: 625px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
 
-   &__title {
-   }
-   &__subtitle {
-   }
-   &__tabs {
-   }
+    &__title {
+    }
+    &__subtitle {
+    }
+    &__tabs {
+    }
 }
 
 .tabs {
-   &__list {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 80px;
-   }
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 80px;
 
-   &__item {
-      text-align: center;
-      background-color: $color-secondary-1;
-   }
+        @media (max-width: $sm) {
+            margin-bottom: 40px;
+        }
+    }
 
-   &__link {
-      display: block;
-      width: 448px;
-      font-size: 30px;
-      line-height: 1.1;
-      font-weight: 700;
-      color: $color-primary-2;
-      padding: 40px 50px;
-      border-radius: 20px;
-      transition: all 0.3s;
-      
-      &--active {
-         color: $color-secondary-4;
-         background-color: $color-primary-1;
-      }
-   }
+    &__item {
+        text-align: center;
+        background-color: $color-secondary-1;
+        border-radius: 20px;
 
-   &__content {
-      padding: 0 65px;
-   }
-   &__content-item {
-      display: none;
+        @media (max-width: $lg) {
+            width: 100%;
+        }
 
-      &--active {
-         display: block;
-      }
-   }
+        @media (max-width: $sm) {
+            text-align-last: left;
+        }
+    }
 
-   &__content-create {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-   }
-   &__content-create-left {
-      max-width: 580px;
-   }
+    &__link {
+        @include adaptiv-font(30, 22);
+        display: block;
+        width: 448px;
+        line-height: 1.1;
+        font-weight: 700;
+        color: $color-primary-2;
+        padding: 40px 20px;
+        border-radius: 20px;
 
-   &__content-create-title {
-      font-size: 40px;
-      line-height: 1.2;
-      font-weight: 700;
-      color: $color-primary-2;
-      padding-left: 120px;
-      margin-bottom: 22px;
-      position: relative;
+        &--active {
+            color: $color-secondary-4;
+            background-color: $color-primary-1;
+        }
 
-      &::before {
-         @include pseudo;
-         top: 0;
-         left: 0;
-         width: 97px;
-         height: 97px;
-         background-image: url("../images/icon-tabs.svg");
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
-      }
-   }
+        @media (max-width: $lg) {
+            width: 100%;
+            padding: 25px 10px;
+        }
 
-   &__content-create-text {
-      margin-bottom: 40px;
-   }
-   &__content-create-link {
-   }
-   &__content-create-img {
-   }
-   &__content-install {
-   }
-   &__content-track {
-   }
+        @media (max-width: $sm) {
+            font-size: 22px;
+            padding: 15px 10px;
+        }
+    }
+
+    &__content {
+        padding: 0 65px;
+
+        @media (max-width: $xl) {
+            padding: 0;
+        }
+
+        &-item {
+            display: none;
+
+            &--active {
+                display: block;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            @media (max-width: $xl) {
+                flex-direction: column;
+            }
+        }
+
+        &-left {
+            max-width: 48%;
+            margin: 0 20px 0 0;
+
+            @media (max-width: $xl) {
+                max-width: 100%;
+                margin: 0 0 40px 0;
+            }
+        }
+
+        &-title {
+            @include adaptiv-font(40, 20);
+            min-height: 97px;
+            line-height: 1.2;
+            font-weight: 700;
+            color: $color-primary-2;
+            padding-left: 120px;
+            margin-bottom: 22px;
+            position: relative;
+
+            @media (max-width: $lg) {
+                min-height: 60px;
+                padding-left: 80px;
+            }
+
+            @media (max-width: $sm) {
+                min-height: 40px;
+                padding-left: 55px;
+                margin-bottom: 12px;
+            }
+
+            &::before {
+                @include pseudo;
+                top: 0;
+                left: 0;
+                width: 97px;
+                height: 97px;
+                background-image: url("../images/icon-tabs.svg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+                @media (max-width: $lg) {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                @media (max-width: $sm) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        &-text {
+            margin-bottom: 40px;
+
+            @media (max-width: $sm) {
+               margin-bottom: 20px;
+            }
+        }
+    }
 }

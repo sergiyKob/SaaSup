@@ -1,70 +1,121 @@
 .homepage-about {
-   position: relative;
+    position: relative;
+    margin: 100px 0 100px;
+    padding-bottom: 47px;
 
-   &::before {
-      @include pseudo;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 368px;
-      height: 750px;
-      background-image: url("../images/decor-about.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      z-index: -1;
-   }
+    @media (max-width: $lg) {
+        margin: 50px 0 50px;
+    }
 
-   &__inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-   }
+    &::before {
+        @include pseudo;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 368px;
+        height: 750px;
+        background-image: url("../images/decor-about.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
 
-   &__content {
-      max-width: 600px;
-      margin-right: 24px;
-   }
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
 
-   &__title {
-   }
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-   &__subtitle {
-      margin-bottom: 26px;
-   }
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+    }
 
-   &__text {
-      margin-bottom: 42px;
-   }
+    &__content {
+        max-width: 42%;
+        margin-right: 24px;
 
-   &__content-bottom {
-      padding-left: 115px;
-      position: relative;
+        @media (max-width: $lg) {
+            max-width: 80%;
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
 
-      &::before {
-         @include pseudo;
-         top: 0;
-         left: 0;
-         width: 96px;
-         height: 103px;
-         background-image: url("../images/icons/icon-coins.svg");
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: center;
-      }
+        @media (max-width: $md) {
+            max-width: 100%;
+        }
 
-      &-title {
-         font-size: 30px;
-         line-height: 1.1;
-         font-weight: 700;
-         color: $color-primary-2;
-         margin-bottom: 10px;
-      }
+        &-top {
+            @media (max-width: $lg) {
+                text-align: center;
+            }
+        }
+    }
 
-      &-text {
-      }
-   }
+    &__title {
+    }
 
-   &__img {
-   }
+    &__subtitle {
+        margin-bottom: 26px;
+    }
+
+    &__text {
+        margin-bottom: 42px;
+    }
+
+    &__content-bottom {
+        padding: 0 0 26px 115px;
+        position: relative;
+
+        @media (max-width: $sm) {
+            padding: 60px 0 0 0;
+            text-align: center;
+        }
+
+        &::before {
+            @include pseudo;
+            top: 0;
+            left: 0;
+            width: 96px;
+            height: 103px;
+            background-image: url("../images/icons/icon-coins.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            @media (max-width: $sm) {
+                width: 48px;
+                height: 52px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &-title {
+            font-size: 30px;
+            line-height: 1.1;
+            font-weight: 700;
+            color: $color-primary-2;
+            margin-bottom: 10px;
+
+            @media (max-width: $sm) {
+                font-size: 28px;
+            }
+        }
+
+        &-text {
+        }
+    }
+
+    &__img {
+        max-width: 58%;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+        }
+    }
 }

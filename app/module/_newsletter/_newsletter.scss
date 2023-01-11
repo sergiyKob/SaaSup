@@ -1,78 +1,139 @@
 .newsletter {
-   &__inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      padding: 45px 60px;
-      border-radius: 50px;
-   }
+    &__inner {
+        background-image: url("../images/newsletter-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 45px 60px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-   &__content {
-      max-width: 577px;
-   }
+        @media (max-width: $xl) {
+            padding: 30px;
+        }
 
-   &__title {
-      color: $color-secondary-4;
-      margin-bottom: 26px;
-   }
-   &__text {
-      margin-bottom: 32px;
-      color: $color-secondary-4;
-   }
+        @media (max-width: $lg) {
+            flex-direction: column;
+            border-radius: 30px;
+        }
 
-   &__form {
-   }
-   &__img {
-   }
+        @media (max-width: $sm) {
+            padding: 30px 15px;
+        }
+    }
+
+    &__content {
+        max-width: 577px;
+
+          @media (max-width: $lg) {
+            max-width: 100%;
+        }
+    }
+
+    &__title {
+        color: $color-secondary-4;
+        margin-bottom: 26px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 12px;
+        }
+    }
+    
+    &__text {
+        margin-bottom: 32px;
+        color: $color-secondary-4;
+
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__form {
+    }
+
+    &__img {
+        @media (max-width: $lg) {
+            display: none;
+        }
+    }
 }
 
 .form-newsletter {
-   display: flex;
+    display: flex;
 
-   &__label {
-   }
-   &__input {
-      width: 383px;
-      padding: 25px 37px;
-      background-color: rgba(255, 255, 255, 0.2);
-      border-radius: 39px;
-      outline: transparent;
-      margin-right: 28px;
-      transition: all 0.3s;
+    @media (max-width: $md) {
+        flex-direction: column;
+    }
 
-      &::placeholder {
-         font-size: 18px;
-         line-height: 1.39;
-         font-weight: 700;
-         color: $color-secondary-4;
-         transition: all 0.3s;
-      }
+    &__label {
+    }
 
-      &:hover {
-         background-color: rgba(255, 255, 255, 0.4);
-      }
-      
-      &:focus {
-         box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.8);
-      }
-   }
+    &__input {
+        width: 383px;
+        padding: 25px 37px;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 39px;
+        outline: transparent;
+        margin-right: 28px;
+        transition: all 0.3s;
+        color: $color-secondary-4;
 
-   &__btn {
-      white-space: nowrap;
-      color: $color-primary-1;
-      background-color: $color-secondary-4;
-      padding: 25px 34px;
+        @media (max-width: $md) {
+            width: 100%;
+            margin: 0 0 20px 0;
+            padding: 20px 37px;
+            text-align: center;
+        }
 
-      &:hover {
-         background-color: rgba(255, 255, 255, 0.2);
-         color: $color-secondary-4;
-      }
+        @media (max-width: $sm) {
+            font-size: 16px;
+            padding: 12px 12px;
+            margin: 0 0 10px 0;
 
-      &:active {
-         background-color: rgba(255, 255, 255, 0.5);
-      }
-   }
+        }
+
+        &::placeholder {
+            font-size: 18px;
+            line-height: 1.39;
+            font-weight: 700;
+            color: $color-secondary-4;
+            transition: all 0.3s;
+
+            @media (max-width: $sm) {
+                font-size: 14px;
+            }
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        &:focus {
+            box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.8);
+            background-color: rgba(255, 255, 255, 0.2);
+
+        }
+    }
+
+    &__btn {
+        white-space: nowrap;
+        color: $color-primary-1;
+        background-color: $color-secondary-4;
+        padding: 25px 34px;
+
+        @media (max-width: $sm) {
+            padding: 16px 34px;
+        }
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: $color-secondary-4;
+        }
+
+        &:active {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
 }

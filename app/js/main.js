@@ -2,15 +2,15 @@ $(function () {
 
   //  burger menu  //
 
-  // $('.burger').on('click', function () {
-  //   $('.burger,.menu__list').toggleClass('active');
-  //   $('body').toggleClass('lock');
-  // });
+  $('.burger').on('click', function () {
+    $('.burger,.menu__inner').toggleClass('active');
+    $('body').toggleClass('lock');
+  });
 
-  // $('.menu__list a').on('click', function () {
-  //   $('.burger,.menu__list').removeClass('active');
-  //   $('body').removeClass('lock');
-  // });
+  $('.menu__inner a').on('click', function () {
+    $('.burger,.menu__inner').removeClass('active');
+    $('body').removeClass('lock');
+  });
 
 
 
@@ -26,17 +26,16 @@ $(function () {
     slidesToScroll: 1,
     infinite: true,
     fade: true,
-   //  adaptiveHeight: true,
-   //  responsive: [
-   //    {
-   //      breakpoint: 992,
-   //      settings: {
-   //        slidesToShow: 1,
-   //        slidesToScroll: 1,
-   //        arrows: false
-   //      }
-   //    }
-   //  ]
+    // responsive: [
+    //   {
+    //     breakpoint: 992,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1,
+    //       arrows: false
+    //     }
+    //   }
+    // ]
   });
 
 

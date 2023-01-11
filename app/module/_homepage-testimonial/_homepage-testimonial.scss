@@ -1,99 +1,142 @@
 .homepage-testimonial {
-   background-color: $color-primary-1;
-   color: $color-secondary-4;
-   padding: 195px 170px;
-   position: relative;
-   // overflow: hidden;
+    background-color: $color-primary-1;
+    color: $color-secondary-4;
+    padding: 195px 0;
+    position: relative;
+    margin: 100px 0;
+    overflow: hidden;
 
-  &__top {
-   text-align: center;
-   margin-bottom: 30px;
-  }
+    &__top {
+        text-align: center;
+        margin-bottom: 30px;
+    }
 
-  &__title {
-   color: $color-secondary-4;
-   background-color: rgba(104, 80, 255, 1);
-  }
+    &__title {
+        color: $color-secondary-4;
+        background-color: rgba(104, 80, 255, 1);
+    }
 
-  &__subtitle {
-   color: $color-secondary-4;
-  }
+    &__subtitle {
+        color: $color-secondary-4;
+    }
 
-  &__slider {
-    padding: 0 100px;
-  }
-  &__decor-testimonial {}
-  &__decor-testimonial-item {
-   position: absolute;
-  }
+    &__slider {
+        padding: 0 100px;
 
-  &__decor-testimonial-item--1 {
-   top: 0;
-   left: 0;
-  }
-  &__decor-testimonial-item--2 {
-   top: 16%;
-   right: 0;
-  }
-  &__decor-testimonial-item--3 {
-    top: 39%;
-   right: 0;
-  }
+        @media (max-width: $md) {
+            padding: 0 75px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 0;
+        }
+    }
+
+    &__decor-testimonial-item {
+        position: absolute;
+
+        @media (max-width: $xl) {
+            display: none;
+        }
+    }
+
+    &__decor-testimonial-item--1 {
+        top: 0;
+        left: 0;
+    }
+
+    &__decor-testimonial-item--2 {
+        top: 16%;
+        right: 0;
+    }
+
+    &__decor-testimonial-item--3 {
+        top: 39%;
+        right: 0;
+    }
+
+    @media (max-width: $xl) {
+        padding: 100px 0;
+    }
+
+     @media (max-width: $sm) {
+        padding: 50px 0;
+        margin: 50px 0;
+    }
 }
 
 .slider-testimonial {
-  &__item-testimonial {
-  
-  }
+    &__item-testimonial {
+    }
 
-  &__blockquote {
-   max-width: 1050px;
-   margin: 0 auto;
-   font-size: 25px;
-   font-weight: 600;
-   font-style: italic;
-   text-align: center;
-   padding-top: 60px;
-   margin-bottom: 30px;
-   position: relative;
+    &__blockquote {
+        max-width: 1050px;
+        margin: 0 auto;
+        font-size: 25px;
+        font-weight: 600;
+        font-style: italic;
+        text-align: center;
+        padding-top: 60px;
+        margin-bottom: 30px;
+        position: relative;
 
-   &::before {
-      @include pseudo;
-      width: 42px;
-      height: 32px;
-      top: 5px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url('../images/icons/icon-quote.svg');
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+        &::before {
+            @include pseudo;
+            width: 42px;
+            height: 32px;
+            top: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: url("../images/icons/icon-quote.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
 
-   }
-  }
+            @media (max-width: $sm) {
+                width: 20px;
+                height: 15px;
+            }
+        }
 
-  &__author {
-   max-width: 200px;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-  }
-  &__author-img {
-   border-radius: 100%;
-   margin-bottom: 15px;
-  }
+        @media (max-width: $sm) {
+            font-size: 18px;
+            padding-top: 30px;
+        }
+    }
 
-  &__author-name {
-   font-size: 35px;
-  }
+    &__author {
+        max-width: 200px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__author-img {
+        border-radius: 100%;
+        margin-bottom: 15px;
 
-  &__author-position {
-   font-size: 20px;
-   font-weight: 600;
-   margin-bottom: 10px;
-  }
+        @media (max-width: $sm) {
+            max-width: 80px;
+            max-height: 80px;
+            margin-bottom: 8px;
+        }
+    }
 
-  &__author-rating {
-  }
+    &__author-name {
+        font-size: 35px;
+
+        @media (max-width: $sm) {
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__author-position {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    &__author-rating {
+    }
 }
