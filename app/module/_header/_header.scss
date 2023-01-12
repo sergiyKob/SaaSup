@@ -76,6 +76,10 @@
             padding: 5px 0;
             border-radius: 0;
         }
+
+        &--secondary {
+            background-color: $color-secondary-1;
+        }
     }
 
     &__item {
@@ -93,7 +97,7 @@
 
         @media (max-width: $lg) {
             background-color: rgba(164, 104, 255, 1);
-            
+
             &:not(:last-child) {
                 margin-bottom: 5px;
             }
@@ -129,12 +133,34 @@
             fill: $color-secondary-4;
             margin-left: 5px;
             transition: all 0.3s;
+
+            &--secondary {
+                fill: $color-primary-2;
+            }
         }
 
         @media (max-width: $lg) {
             display: block;
             margin: 0 auto;
             padding: 10px 0;
+        }
+
+        &--secondary {
+            color: $color-primary-2;
+
+            &:hover {
+                color: $color-primary-1;
+                .menu__link-icon--secondary {
+                    fill: $color-primary-1;
+                }
+            }
+
+            &:focus {
+            }
+
+            &:active {
+                color: rgba(82, 54, 255, 0.5);
+            }
         }
     }
 

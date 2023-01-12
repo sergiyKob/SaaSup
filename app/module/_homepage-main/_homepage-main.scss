@@ -71,8 +71,9 @@
     &__title {
         margin-bottom: 17px;
     }
-
+    
     &__text {
+        font-size: 25px;
         margin-bottom: 48px;
 
         @media (max-width: $xl) {
