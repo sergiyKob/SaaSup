@@ -8,6 +8,9 @@
 
 @import "../module/_header/_header";
 @import "../module/_menu-fixed/_menu-fixed";
+
+//-------- home-page --------//
+
 @import "../module/_homepage-main/_homepage-main";
 @import "../module/_homepage-features/_homepage-features";
 @import "../module/_homepage-about/_homepage-about";
@@ -18,7 +21,9 @@
 @import "../module/_home-page-blog/_home-page-blog";
 
 //-------- about-us page --------//
+
 @import "../module/about-us/_about-us-main";
+@import "../module/about-us/_about-us-info";
 
 
 
