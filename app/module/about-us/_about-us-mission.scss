@@ -1,0 +1,39 @@
+.about-us-mission {
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 44%;
+    margin-right: 25px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    &:not(:last-child) {
+        margin-bottom: 50px;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 760px;
+    height: 378px;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+  }
+}
+
