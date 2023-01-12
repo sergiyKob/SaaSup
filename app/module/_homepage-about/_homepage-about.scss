@@ -36,8 +36,8 @@
     }
 
     &__content {
-        max-width: 42%;
-        margin-right: 24px;
+        max-width: 44%;
+        margin-right: 60px;
 
         @media (max-width: $lg) {
             max-width: 80%;
@@ -57,6 +57,7 @@
     }
 
     &__title {
+        margin-bottom: 25px;
     }
 
     &__subtitle {
@@ -96,10 +97,6 @@
         }
 
         &-title {
-            font-size: 30px;
-            line-height: 1.1;
-            font-weight: 700;
-            color: $color-primary-2;
             margin-bottom: 10px;
 
             @media (max-width: $sm) {
@@ -112,7 +109,7 @@
     }
 
     &__img {
-        max-width: 58%;
+        max-width: 52%;
 
         @media (max-width: $lg) {
             max-width: 100%;

@@ -5,6 +5,7 @@
         background-size: cover;
         background-position: center;
         padding: 45px 60px;
+        color: $color-secondary-4;
         border-radius: 50px;
         display: flex;
         justify-content: space-between;
@@ -33,7 +34,7 @@
     }
 
     &__title {
-        color: $color-secondary-4;
+        color: inherit;
         margin-bottom: 26px;
 
         @media (max-width: $sm) {
@@ -43,7 +44,6 @@
     
     &__text {
         margin-bottom: 32px;
-        color: $color-secondary-4;
 
         @media (max-width: $sm) {
             margin-bottom: 20px;

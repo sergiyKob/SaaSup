@@ -16,7 +16,6 @@ body {
     }
 }
 
-
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -182,42 +181,42 @@ body {
     }
 }
 
-.title-page,
-.subtitle {
-    line-height: 1.1;
-    font-weight: 800;
-    color: $color-primary-2;
-}
+// .title-page,
+// .subtitle {
+//     line-height: 1.1;
+//     font-weight: 800;
+//     color: $color-primary-2;
+// }
 
-.title-page {
-    @include adaptiv-font(75, 36);
-}
+// .title-page {
+//     @include adaptiv-font(75, 36);
+// }
 
-.subtitle {
-    @include adaptiv-font(50, 30);
-}
+// .subtitle {
+//     @include adaptiv-font(50, 30);
+// }
 
-.title-section {
-    display: inline-block;
-    font-size: 18px;
-    line-height: 1.39;
-    font-weight: 700;
-    padding: 25px 46px;
-    margin-bottom: 30px;
-    border-radius: 39px;
-    background-color: $color-secondary-2;
-    color: $color-primary-1;
+// .title-section {
+//     display: inline-block;
+//     font-size: 18px;
+//     line-height: 1.39;
+//     font-weight: 700;
+//     padding: 25px 46px;
+//     margin-bottom: 30px;
+//     border-radius: 39px;
+//     background-color: $color-secondary-2;
+//     color: $color-primary-1;
 
-    @media (max-width: $md) {
-        padding: 20px 46px;
-        margin-bottom: 20px;
-    }
+//     @media (max-width: $md) {
+//         padding: 20px 46px;
+//         margin-bottom: 20px;
+//     }
 
-    @media (max-width: $sm) {
-        padding: 13px 35px;
-        margin-bottom: 12px;
-    }
-}
+//     @media (max-width: $sm) {
+//         padding: 13px 35px;
+//         margin-bottom: 12px;
+//     }
+// }
 
 .card-features {
     padding: 78px 33px 52px;
@@ -277,7 +276,6 @@ body {
         transition: color 0.3s;
     }
 }
-
 
 //---- slick-button ----//
 
@@ -347,3 +345,53 @@ body {
 
 //-----------------------//
 
+.heading {
+    max-width: 740px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.title-800 {
+    font-weight: 800;
+    line-height: 1.1;
+    color: $color-primary-2;
+
+    &--xl {
+        @include adaptiv-font(75, 36);
+    }
+    &--lg {
+        @include adaptiv-font(50, 30);
+    }
+    &--md {
+        @include adaptiv-font(40, 24);
+    }
+}
+
+.title-700 {
+    @include adaptiv-font(30, 24);
+    font-weight: 700;
+    line-height: 1.1;
+    color: $color-primary-2;
+}
+
+.subtitle {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.39;
+    font-weight: 700;
+    padding: 25px 46px;
+    margin-bottom: 30px;
+    border-radius: 39px;
+    background-color: $color-secondary-2;
+    color: $color-primary-1;
+
+    @media (max-width: $md) {
+        padding: 20px 46px;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: $sm) {
+        padding: 13px 35px;
+        margin-bottom: 12px;
+    }
+}

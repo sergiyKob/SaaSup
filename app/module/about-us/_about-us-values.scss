@@ -1,0 +1,57 @@
+.about-us-values {
+    padding-bottom: 200px;
+
+    &__heading {
+    }
+    &__subtitle {
+    }
+    &__title {
+    }
+
+    &__values-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    &__values-item {
+    }
+}
+
+.item-values {
+    max-width: 47%;
+    background-color: $color-secondary-1;
+    padding: 39px 27px 39px 197px;
+    border-radius: 30px;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        top: 39px;
+        left: 27px;
+        width: 130px;
+        height: 160px;
+    }
+    &--1::before {
+        background-image: url("../images/about-us/icon-values-1.jpg");
+    }
+    &--2::before {
+        background-image: url("../images/about-us/icon-values-2.jpg");
+    }
+    &--3::before {
+        background-image: url("../images/about-us/icon-values-3.jpg");
+    }
+    &--4::before {
+        background-image: url("../images/about-us/icon-values-4.jpg");
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+
+    &__text {
+    }
+}
