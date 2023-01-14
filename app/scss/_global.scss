@@ -351,6 +351,7 @@ body {
     text-align: center;
 }
 
+
 .title-800 {
     font-weight: 800;
     line-height: 1.1;
@@ -372,6 +373,10 @@ body {
     font-weight: 700;
     line-height: 1.1;
     color: $color-primary-2;
+
+    &--white {
+        color: $color-secondary-4;
+    }
 }
 
 .subtitle {

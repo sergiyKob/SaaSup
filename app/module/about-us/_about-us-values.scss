@@ -10,6 +10,7 @@
 
     &__values-list {
         display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
         gap: 50px;
     }
@@ -20,10 +21,15 @@
 
 .item-values {
     max-width: 47%;
+    min-height: 238px;
     background-color: $color-secondary-1;
     padding: 39px 27px 39px 197px;
     border-radius: 30px;
     position: relative;
+
+    @media (max-width: $xl) {
+        max-width: 100%;
+    }
 
     &::before {
         @include pseudo;
