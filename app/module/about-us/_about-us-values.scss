@@ -1,6 +1,14 @@
 .about-us-values {
     padding-bottom: 200px;
 
+     @media (max-width: $xl) {
+        padding-bottom: 100px;;
+    }
+
+     @media (max-width: $lg) {
+        padding-bottom: 50px;;
+    }
+
     &__heading {
     }
     &__subtitle {
@@ -13,6 +21,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 50px;
+
+        @media (max-width: $sm) {
+            gap: 30px;
+        }
     }
 
     &__values-item {
@@ -29,6 +41,12 @@
 
     @media (max-width: $xl) {
         max-width: 100%;
+        padding: 39px 27px 39px 197px;
+    }
+
+    @media (max-width: $sm) {
+        text-align: center;
+        padding: 115px 15px 25px 15px;
     }
 
     &::before {
@@ -40,6 +58,14 @@
         left: 27px;
         width: 130px;
         height: 160px;
+
+        @media (max-width: $sm) {
+            top: 25px;
+            left: 50%;
+            width: 60px;
+            height: 75px;
+            transform: translateX(-50%);
+        }
     }
     &--1::before {
         background-image: url("../images/about-us/icon-values-1.jpg");

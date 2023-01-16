@@ -1,9 +1,7 @@
 .about-us-info {
-
     &__info-list {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
         flex-wrap: wrap;
         gap: 30px;
         background-color: $color-secondary-1;
@@ -11,18 +9,31 @@
         padding: 93px 67px;
 
         @media (max-width: $lg) {
+            padding: 50px 20px;
+        }
+
+         @media (max-width: $sm) {
+            gap: 50px;
         }
     }
 
     &__info-item {
         width: 20%;
-        font-size: 25px;
+        @include adaptiv-font(25, 20);
         font-weight: 700;
         color: $color-primary-2;
         text-align: center;
 
         @media (max-width: $lg) {
+            width: 47%;
+        }
+
+        @media (max-width: $md) {
             width: 40%;
+        }
+
+        @media (max-width: $sm) {
+            width: 100%;
         }
     }
 

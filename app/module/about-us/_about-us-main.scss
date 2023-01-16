@@ -1,11 +1,16 @@
 .about-us-main {
     padding: 200px 0 120px;
-    margin-bottom: 70px;
 
-    &__top {
+    @media (max-width: $lg) {
+        padding: 120px 0 80px;
+    }
+
+     @media (max-width: $sm) {
+        padding: 85px 0 50px;
+    }
+
+    &__heading {
         max-width: 700px;
-        text-align: center;
-        margin: 0 auto 40px;
 
         &-title {
             margin-bottom: 17px;
@@ -13,54 +18,76 @@
 
         &-text {
             font-size: 25px;
+
+            @media (max-width: $sm) {
+                font-size: 18px;
+            }
         }
     }
 
     &__img-box {
         display: flex;
         align-items: center;
+        gap: 40px;
         margin-bottom: 80px;
 
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50px;
+        @media (max-width: $md) {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: $lg) {
+            gap: 20px;
+        }
+
+        @media (max-width: $sm) {
+            gap: 10px;
         }
     }
 
     &__img {
-        position: relative;
-
         &-left {
-            width: 884px;
-            height: 583px;
-            margin-right: 40px;
         }
 
         &-right {
-            width: 476px;
-            height: 583px;
         }
     }
 
-    &__content {
+    &__bottom {
         display: flex;
         justify-content: space-between;
 
+        @media (max-width: $lg) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         &-box {
             max-width: 64%;
+
+            @media (max-width: $xl) {
+                max-width: 70%;
+            }
+
+             @media (max-width: $lg) {
+                max-width: 100%;
+            }
         }
 
         &-title {
+
+             @media (max-width: $lg) {
+                    margin-bottom: 20px;
+                }
         }
 
         &-text {
             &:not(:last-child) {
                 margin-bottom: 40px;
+
+                @media (max-width: $lg) {
+                    margin-bottom: 20px;
+                }
             }
         }
     }

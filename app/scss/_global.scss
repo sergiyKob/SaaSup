@@ -349,8 +349,11 @@ body {
     max-width: 740px;
     margin: 0 auto 45px;
     text-align: center;
-}
 
+    @media (max-width: $md) {
+        margin: 0 auto 30px;
+    }
+}
 
 .title-800 {
     font-weight: 800;
