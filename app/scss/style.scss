@@ -30,7 +30,26 @@
 
 
 
+//-------- features page --------//
 
+@import "../module/_features/_features";
+@import "../module/_features/_features-integration";
+
+
+//-------- integration page --------//
+
+@import "../module/_integration/_integration-social";
+
+
+
+//-------- integration-facebook page --------//
+
+@import "../module/_integration/_integration-facebook";
+
+
+//-------- blog page --------//
+
+@import "../module/_blog/_blog";
 
 
 

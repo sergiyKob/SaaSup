@@ -1,0 +1,125 @@
+.facebook {
+    padding: 290px 0 200px;
+
+    @media (max-width: $xl) {
+        padding: 205px 0 100px;
+    }
+
+    @media (max-width: $lg) {
+        padding: 120px 0 50px;
+    }
+
+    @media (max-width: $sm) {
+        padding: 75px 0 50px;
+    }
+
+    &__heading {
+
+        &-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 10px;
+                justify-content: start;
+            }
+        }
+
+        &-img {
+            margin-right: 14px;
+            border-radius: 20px;
+
+            @media (max-width: $lg) {
+                max-width: 90px;
+            }
+
+            @media (max-width: $sm) {
+                max-width: 60px;
+                margin-right: 5px;
+                border-radius: 10px;
+            }
+        }
+
+        &-title {
+        }
+        &-text {
+            @media (max-width: $sm) {
+                text-align: left;
+            }
+        }
+    }
+
+    &__content {
+        background-color: $color-secondary-1;
+        border-radius: 30px;
+        padding: 143px 30px;
+
+        @media (max-width: $xl) {
+            padding: 100px 30px;
+        }
+
+        @media (max-width: $lg) {
+            padding: 60px 30px;
+        }
+
+        @media (max-width: $md) {
+            padding: 40px 30px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 20px 15px;
+        }
+
+        &-inner {
+            max-width: 970px;
+            margin: 0 auto;
+        }
+
+        &-title {
+            margin-bottom: 40px;
+
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: $sm) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-text {
+            margin-bottom: 35px;
+
+            @media (max-width: $md) {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: $sm) {
+                margin-bottom: 12px;
+            }
+        }
+
+        &-img {
+            margin: 0 auto 60px;
+            border-radius: 30px;
+
+            @media (max-width: $md) {
+                margin: 0 auto 40px;
+            }
+
+            @media (max-width: $sm) {
+                margin: 0 auto 25px;
+            }
+        }
+
+        &-subtitle {
+            margin-bottom: 13px;
+        }
+
+        &-link {
+            padding: 25px 48px;
+        }
+    }
+}

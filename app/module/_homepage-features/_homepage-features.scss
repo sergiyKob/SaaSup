@@ -1,23 +1,18 @@
 .homepage-features {
-    
   &__heading {
     max-width: 640px;
   }
 
-  &__title {
-
-  }
-
   &__subtitle {}
 
-  &__inner {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+  &__title {}
+
+  &__features-list {
+    gap: 10px;
   }
 
-  &__card {}
-}
+  &__features-item {}
 
+  &__features-card {}
+}
 

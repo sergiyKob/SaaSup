@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SaaSup</title>
+  <link rel="icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="container">
+        <nav class="menu">
+            <a class="logo" href="#body">
+                <img class="logo__img" src="images/logo.png" width="173" height="41" alt="logo SaaSup">
+            </a>
+            <div class="menu__inner">
+
+                <ul class="menu__list menu__list--secondary">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary menu__link--active" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary" href="#">
+                            About
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary" href="#">
+                            Features
+                            <svg class="menu__link-icon menu__link-icon--secondary">
+                                <use xlink:href="images/sprite.svg#triangle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Features111
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Features222
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Features333
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary" href="#">
+                            Pages
+                            <svg class="menu__link-icon menu__link-icon--secondary">
+                                <use xlink:href="images/sprite.svg#triangle-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="sub-menu__list">
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    About Us
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Integrations
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="sub-menu__item">
+                                <a class="sub-menu__link" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link menu__link--secondary" href="#">
+                            Contact
+                        </a>
+                    </li> 
+                </ul>
+
+                <button class="menu__btn btn btn--blue">
+                    Sign In
+                </button>
+
+            </div>
+
+            <button class="burger" type="button">
+                <span class="burger__line"></span>
+                <span class="sr-only">mobile menu</span>
+            </button>
+        </nav>
+    </div>
+</header>
+
+    <div class="wrapper">
+
+        <main class="main">
+            <section class="articles">
+                <div class="container">
+                    <div class="articles__heading heading">
+                        <h1 class="articles__heading-title title-800 title-800--xl">
+                            News & Articles
+                        </h1>
+                        <p class="articles__heading-text">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit
+                            interdum ullamcorper sed pharetra sene.
+                        </p>
+                    </div>
+
+                    <ul class="articles__articles-list">
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article1.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            10 Top tips for making your
+                                            Saas product sticky
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article2.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            How to identify growth KPIs that are relevant
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+
+                        </li>
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article3.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            Is it worth it to build a mobile app for your business?
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+
+                        </li>
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article4.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            How to choose the right app reseller program
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+
+                        </li>
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article5.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            10 Top tips for making your
+                                            Saas product sticky
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+
+                        </li>
+                        <li class="articles__articles-item">
+                            <article class="article-card">
+                                <div class="article-card__head">
+                                    <a class="article-card__link-img" href="#">
+                                        <img src="images/blog/article6.jpg" alt="img">
+                                    </a>
+                                    <ul class="article-card__tags">
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Marketing
+                                            </a>
+                                        </li>
+                                        <li class="article-card__tag">
+                                            <a class="article-card__tag-link" href="#">
+                                                Analysis
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="article-card__content">
+                                    <div class="article-card__date">
+                                        November 15, 2022
+                                    </div>
+                                    <a class="article-card__title-link" href="#">
+                                        <h3 class="article-card__title title-800 title-800--md">
+                                            10 Top tips for making your
+                                            Saas product sticky
+                                        </h3>
+                                    </a>
+                                    <p class="article-card__text">
+                                        It is a long established fact that a reader will be distracted by the readable
+                                        content of a page
+                                        from
+                                        when looking at it
+                                        layout. The point of using Lorem Ipsum
+                                    </p>
+                                    <a class="article-card__link" href="#">
+                                        Read More
+                                    </a>
+                                </div>
+                            </article>
+                        
+                        </li>
+                       
+                    </ul>
+                </div>
+            </section>
+
+            <div class="scroll-up">
+  <svg class="scroll-up__icon">
+    <use xlink:href="images/sprite.svg#arrow-up"></use>
+  </svg>
+</div>
+
+        </main>
+
+        <footer class="footer">
+   <div class="container">
+      <div class="footer__inner">
+         <div class="footer__top">
+            <div class="footer__contacts contacts">
+               <a class="footer__logo logo" href="#body">
+                  <img class="logo__img" src="images/logo.png" width="173" height="41" alt="logo SaaSup">
+               </a>
+               <address class="contacts">
+                  <p class="contacts__text">
+                     It is a long established fact that from
+                     will be distracted by the readable
+                     from when looking.
+                  </p>
+                  <ul class="contacts__email-list">
+                     <li class="contacts__email-item">
+                        <a class="contacts__email-link" href="mailto:saasup@gmail.com">
+                           saasup@gmail.com
+                        </a>
+                     </li>
+                     <li class="contacts__email-item">
+                        <a class="contacts__email-link" href="mailto:mail@saasup.com">
+                           mail@saasup.com
+                        </a>
+                     </li>
+                  </ul>
+
+                  <ul class="contacts__phone-list">
+                     <li class="contacts__phone-item">
+                        <a class="contacts__phone-link" href="tel:987 6541 3654">
+                           +987 6541 3654
+                        </a>
+                     </li>
+                     <li class="contacts__phone-item">
+                        <a class="contacts__phone-link" href="tel:001 6547 6589">
+                           +001 6547 6589
+                        </a>
+                     </li>
+                  </ul>
+               </address>
+            </div>
+            <div class="footer__pages">
+               <h4 class="footer__pages-title title-700">
+                  Pages
+               </h4>
+               <ul class="footer__pages-list">
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        Home
+                     </a>
+                  </li>
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        About Us
+                     </a>
+                  </li>
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        Integrations
+                     </a>
+                  </li>
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        Pricing
+                     </a>
+                  </li>
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        Features
+                     </a>
+                  </li>
+                  <li class="footer__pages-item">
+                     <a class="footer__pages-link" href="#">
+                        Contact Us
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__utility">
+               <h4 class="footer__utility-title title-700">
+                  Utility
+               </h4>
+               <ul class="footer__utility-list">
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        Password
+                     </a>
+                  </li>
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        Protected
+                     </a>
+                  </li>
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        404 Not Found
+                     </a>
+                  </li>
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        Style Guide
+                     </a>
+                  </li>
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        Licenses
+                     </a>
+                  </li>
+                  <li class="footer__utility-item">
+                     <a class="footer__utility-link" href="#">
+                        CChangelog
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="footer__app">
+               <h4 class="footer__app-title title-700">
+                  <span>Download</span>
+                  Its suitable to all
+                  decvices and screens
+               </h4>
+               <p class="footer__app-text">
+                  It is a long established fact that a reader will be distracted layout.
+               </p>
+               <ul class="footer__app-list">
+                  <li class="footer__app-item">
+                     <a class="footer__app-link btn btn--black" href="#">
+                        <svg class="footer__app-link-icon footer__app-link-icon--apple">
+                           <use xlink:href="images/sprite.svg#icon-apple"></use>
+                        </svg>
+                        App Store
+                     </a>
+                  </li>
+                  <li class="footer__app-item">
+                     <a class="footer__app-link btn btn--border" href="#">
+                        <svg class="footer__app-link-icon footer__app-link-icon--android">
+                           <use xlink:href="images/sprite.svg#icon-android"></use>
+                        </svg>
+                        Play Store
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+         <div class="footer__bottom">
+            <div class="footer__bottom-copyright">
+               Copyright © Saasup | Designed by Victorflow - Powered by Webflow
+            </div>
+            <div class="footer__bottom-social social">
+               <ul class="social__list">
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <svg class="social__link-icon social__link-icon--facebook">
+                           <use xlink:href="images/sprite.svg#facebook"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <svg class="social__link-icon social__link-icon--twitter">
+                           <use xlink:href="images/sprite.svg#twitter"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <svg class="social__link-icon social__link-icon--linkedin">
+                           <use xlink:href="images/sprite.svg#linkedin"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="social__link" href="#">
+                        <svg class="social__link-icon social__link-icon--instagram">
+                           <use xlink:href="images/sprite.svg#instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+
+</footer>
+
+    </div>
+
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
