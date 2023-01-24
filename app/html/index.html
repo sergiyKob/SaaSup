@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-@include('components/_head/_head.html')
+@include('components/_head/_head.html', {
+"pageTitle": "Main"
+})
 
 <body>
 
@@ -18,10 +20,6 @@
             @include('components/_homepage-pricing/_homepage-pricing.html')
             @include('components/_newsletter/_newsletter.html')
             @include('components/_home-page-blog/_home-page-blog.html')
-
-
-
-
 
             @include('components/_scroll-up/_scroll-up.html')
 
