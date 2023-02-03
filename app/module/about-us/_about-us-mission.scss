@@ -44,6 +44,7 @@
         width: 760px;
         max-height: 378px;
         border-radius: 50px;
+        object-fit: cover;
 
         @media (max-width: $sm) {
             border-radius: 30px;

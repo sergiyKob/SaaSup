@@ -1,0 +1,122 @@
+.careers-values {
+    &__heading {
+    }
+
+    &__subtitle {
+    }
+
+    &__title {
+    }
+
+    &__values-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        gap: 20px;
+
+        @media (max-width: $xl) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: $md) {
+            gap: 10px;
+        }
+
+        @media (max-width: $sm) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__values-item {
+        max-width: 452px;
+        background-color: $color-secondary-4;
+        border: 1px solid #f6f6f6;
+        box-shadow: 1px 15px 23px rgba(229, 229, 229, 0.25);
+        border-radius: 40px;
+        padding: 206px 51px 52px;
+        position: relative;
+
+        @media (max-width: $xl) {
+            text-align: center;
+        }
+
+        @media (max-width: $lg) {
+            padding: 165px 30px 30px;
+        }
+
+        @media (max-width: $md) {
+            padding: 130px 20px 20px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 100px 15px 20px;
+        }
+
+        &::before {
+            @include pseudo;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            width: 116px;
+            height: 116px;
+            top: 52px;
+            left: 51px;
+
+            @media (max-width: $xl) {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            @media (max-width: $lg) {
+                top: 30px;
+            }
+
+            @media (max-width: $md) {
+                width: 90px;
+                height: 90px;
+                top: 20px;
+            }
+
+            @media (max-width: $sm) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        &--patients::before {
+            background-image: url("../images/careers/icons/patients.svg");
+        }
+
+        &--salary::before {
+            background-image: url("../images/careers/icons/salary.svg");
+        }
+
+        &--growth::before {
+            background-image: url("../images/careers/icons/growth.svg");
+        }
+
+        &--holidays::before {
+            background-image: url("../images/careers/icons/holidays.svg");
+        }
+
+        &--hours::before {
+            background-image: url("../images/careers/icons/hours.svg");
+        }
+
+        &--insurance::before {
+            background-image: url("../images/careers/icons/insurance.svg");
+        }
+    }
+
+    &__values-title {
+        margin-bottom: 20px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__values-text {
+    }
+}

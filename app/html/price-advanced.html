@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('components/_head/_head.html', {
+"pageTitle": "Price-advanced"
+})
+
+<body>
+
+    @include('components/_header-2/_header-2.html')
+
+    <div class="wrapper">
+
+        <main class="main">
+
+            <section class="price-advanced section section--top">
+                <div class="container">
+                    <div class="price-advanced__inner">
+                        <div class="price-advanced__left">
+                            <h1 class="price-advanced__title title-800 title-800--xl">
+                                Advanced Plan
+                            </h1>
+                            <p class="price-advanced__left-text">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit
+                                interdum ullamcorper sed pharetra sene.
+                            </p>
+
+                            <ul class="price-advanced__left-list">
+                                <li class="price-advanced__left-item">
+                                    All in Basic, plus
+                                </li>
+                                <li class="price-advanced__left-item">
+                                    Up to 10 credit cards
+                                </li>
+                                <li class="price-advanced__left-item">
+                                    Invest in stocks, ETFs and cryptos
+                                </li>
+                                <li class="price-advanced__left-item">
+                                    Premium customer support
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price-advanced__duration duration">
+                            <h2 class="duration__title title-800 title-800--md">
+                                Choose your plan duration
+                            </h2>
+                            <p class="duration__text">
+                                Lorem ipsum dolor sit amet consectet udipiscing elit terdum
+                            </p>
+                            <form class="duration__form">
+                                <select class="duration__select">
+                                    <option disabled selected>Select Plan Duration</option>
+                                    <option>1</option>
+                                    <option>3</option>
+                                    <option>6</option>
+                                    <option>12</option>
+                                </select>
+                            </form>
+                            <div class="duration__price title-800 title-800--xl">
+                                <span class="duration__price-currency">$</span>
+                                7.99
+                                <span class="duration__price-month">/ month</span>
+                            </div>
+                            <button class="duration__btn btn btn--blue" type="submit">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="price-advanced__content">
+                        <h2 class="price-advanced__content-title title-800 title-800--md">
+                            Is Standard Plan a good choice for me?
+                        </h2>
+                        <p class="price-advanced__content-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley .
+                        </p>
+
+                        <ol class="price-advanced__content-list">
+                            <li class="price-advanced__content-item">
+                                There are many variations of passages
+                            </li>
+                            <li class="price-advanced__content-item">
+                                Majority have suffered alteration in some form.
+                            </li>
+                            <li class="price-advanced__content-item">
+                                If you are going to use a passage of Lorem Ipsum.
+                            </li>
+                            <li class="price-advanced__content-item">
+                                It uses a dictionary of over 200 Latin words, combined.
+                            </li>
+                        </ol>
+                        <p class="price-advanced__content-text">
+                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                        </p>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+            @include('components/_scroll-up/_scroll-up.html')
+
+        </main>
+
+        @include('components/_footer/_footer.html')
+
+    </div>
+
+    @include('components/_scripts/_scripts.html')
+
+</body>
+
+</html>

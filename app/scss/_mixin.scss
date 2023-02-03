@@ -1,6 +1,5 @@
 
 //  line-clamp обрізка тексту по рядкам  //
-
 @mixin line-clamp($lines: 1) {
   @if $lines <=1 {
     overflow: hidden;
@@ -16,15 +15,13 @@
 }
 
 // pseudo element //
-
 @mixin pseudo($display: block, $pos: absolute, $content: ''){
   content: $content;
   display: $display;
   position: $pos;
 }
 
-// адаптивний шрифт 
-
+// адаптивний шрифт //
 $maxWidth: 1920;
 @mixin adaptiv-font($pcSize, $mobSize) {
  $addSize: $pcSize - $mobSize;
@@ -32,4 +29,17 @@ $maxWidth: 1920;
  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
 
-//========================//
+// hover для мобілок //
+@mixin hover {
+    @media (any-hover: hover) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+// Підключення шрифтів локально // 
+
+
+
+// --------- //

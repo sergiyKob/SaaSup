@@ -1,0 +1,223 @@
+.price-advanced {
+    
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 30px;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        max-width: 44%;
+        margin-right: 15px;
+
+        @media (max-width: $lg) {
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 22px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__left-text {
+        font-size: 25px;
+        margin-bottom: 72px;
+
+        @media (max-width: $lg) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__left-list {
+        padding-bottom: 72px;
+        border-bottom: 1px solid #d3d3d3;
+
+        @media (max-width: $lg) {
+            padding-bottom: 40px;
+        }
+
+        @media (max-width: $sm) {
+            padding-bottom: 20px;
+        }
+    }
+
+    &__left-item {
+        font-size: 25px;
+        padding-left: 63px;
+        position: relative;
+
+        &:not(:last-child) {
+            margin-bottom: 25px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 5px;
+            }
+        }
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+            padding-left: 35px;
+        }
+
+        &::before {
+            @include pseudo;
+            background-image: url("../images/price-advanced/check-mark.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 28px;
+            height: 28px;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__duration {
+    }
+
+    &__content {
+        max-width: 766px;
+
+        &-title {
+            margin-bottom: 30px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &-text {
+            margin-bottom: 40px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-list {
+            list-style: auto;
+            padding-left: 25px;
+            margin-bottom: 40px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+
+                @media (max-width: $sm) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            &::marker {
+                color: $color-primary-2;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.duration {
+    max-width: 43%;
+    padding: 97px 47px;
+    border-radius: 30px;
+    background-color: $color-secondary-1;
+    
+
+    @media (max-width: $xl) {
+        max-width: 50%;
+        padding: 45px 30px;
+    }
+
+    @media (max-width: $lg) {
+        max-width: 100%;
+    }
+
+    @media (max-width: $sm) {
+        padding: 25px 15px;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        font-size: 25px;
+        margin-bottom: 46px;
+
+        @media (max-width: $sm) {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+    }
+
+    &__select {
+        width: 85%;
+        font-size: 18px;
+        font-weight: 700;
+        border: 1px solid #d3d3d3;
+        border-radius: 39px;
+        padding: 25px 29px;
+        margin-bottom: 29px;
+        cursor: pointer;
+        outline: transparent;
+        transition: all 0.3s;
+
+        @media (max-width: $xl) {
+            width: 100%;
+        }
+
+        @media (max-width: $sm) {
+            padding: 11px 12px;
+            margin-bottom: 15px;
+        }
+
+        &:focus {
+            border: 1px solid $color-primary-2;
+        }
+    }
+
+    &__price {
+        margin-bottom: 46px;
+        display: flex;
+        align-items: baseline;
+
+        @media (max-width: $sm) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__price-currency {
+    }
+
+    &__price-month {
+        font-size: 20px;
+    }
+    &__btn {
+        width: 85%;
+
+        @media (max-width: $xl) {
+            width: 100%;
+        }
+    }
+}

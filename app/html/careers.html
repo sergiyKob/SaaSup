@@ -2,19 +2,22 @@
 <html lang="en">
 
 @include('components/_head/_head.html', {
-"pageTitle": "Features"
+"pageTitle": "Carreers"
 })
 
 <body>
 
     @include('components/_header-2/_header-2.html')
-
+    
     <div class="wrapper">
-
+        
         <main class="main">
-            @include('components/_features/_features.html')
-            @include('components/_features/_features-integration.html')
-            @include('components/_newsletter/_newsletter.html')
+            
+            @include('components/_careers/_careers-main.html')
+            @include('components/_careers/_careers-values.html')
+            @include('components/_careers/_careers-positions.html')
+
+            
             @include('components/_scroll-up/_scroll-up.html')
 
         </main>
