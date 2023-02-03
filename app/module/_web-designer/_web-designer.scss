@@ -1,0 +1,147 @@
+.web-designer {
+    &__heading {
+        max-width: 100%;
+
+        &-title {
+            margin-bottom: 20px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-info {
+            font-size: 20px;
+            line-height: 1.66;
+            margin-bottom: 40px;
+
+            @media (max-width: $sm) {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-location {
+            padding-right: 20px;
+            margin-right: 20px;
+            border-right: 1px solid $color-primary-2;
+        }
+
+        &-employment-type {
+            color: $color-primary-1;
+        }
+        &-link {
+        }
+    }
+
+    &__content {
+        border-radius: 50px;
+        background-color: $color-secondary-1;
+        padding: 140px 115px;
+
+        @media (max-width: $lg) {
+            padding: 80px 60px;
+        }
+
+        @media (max-width: $md) {
+            padding: 70px 50px;
+        }
+
+        @media (max-width: $sm) {
+            background-color: inherit;
+            border-radius: 30px;
+            padding: 20px 0;
+        }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap-reverse;
+            margin-bottom: 26px;
+            gap: 10px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-top-title {
+        }
+
+        &-title {
+            margin-bottom: 26px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 10px;
+            }
+        }
+
+        &-date {
+            font-size: 20px;
+            color: $color-primary-2;
+
+            @media (max-width: $sm) {
+                font-size: 16px;
+            }
+
+            span {
+                color: $color-secondary-3;
+            }
+        }
+        &-text {
+            margin-bottom: 30px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        &-list {
+            list-style: disc;
+            padding-left: 22px;
+            margin-bottom: 55px;
+
+            @media (max-width: $sm) {
+                margin-bottom: 30px;
+            }
+        }
+        &-item {
+            &:not(:last-child) {
+                margin-bottom: 25px;
+
+                @media (max-width: $sm) {
+                    margin-bottom: 15px;
+                }
+            }
+
+            &::marker {
+                color: $color-primary-2;
+            }
+        }
+    }
+
+    &__contact {
+        margin-bottom: 55px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 30px;
+        }
+
+        &-name {
+            color: $color-primary-2;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &-list {
+        }
+        &-item {
+        }
+        &-mail {
+        }
+        &-phone {
+        }
+        &-link {
+        }
+    }
+}
