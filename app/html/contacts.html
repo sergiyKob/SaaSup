@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('components/_head/_head.html', {
+"pageTitle": "contacts"
+})
+
+<body>
+
+    @include('components/_header-2/_header-2.html')
+
+    <div class="wrapper">
+
+        <main class="main">
+
+            @include('components/_contacts/_contacts-main.html')
+            @include('components/_contacts/_contacts-offices.html')
+            @include('components/_contacts/_faq.html')
+     
+
+
+
+            @include('components/_scroll-up/_scroll-up.html')
+
+        </main>
+
+        @include('components/_footer/_footer.html')
+
+    </div>
+
+    @include('components/_scripts/_scripts.html')
+
+</body>
+
+</html>
