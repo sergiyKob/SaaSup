@@ -1,0 +1,43 @@
+.page-404 {
+    padding-bottom: 200px;
+
+    @media (max-width: $lg) {
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: $sm) {
+        padding-bottom: 50px;
+    }
+
+    &__inner {
+        max-width: 782px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        @include adaptiv-font(300, 75);
+        color: $color-primary-1;
+    }
+
+    &__text {
+        @include adaptiv-font(25, 18);
+        margin-bottom: 34px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+    }
+}

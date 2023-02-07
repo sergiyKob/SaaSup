@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@include('components/_head/_head.html', {
+"pageTitle": "404 page not found"
+})
+
+<body>
+
+    @include('components/_header-2/_header-2.html')
+
+    <div class="wrapper">
+
+        <main class="main">
+
+            <section class="page-404 section section--top">
+                <div class="container">
+                    <div class="page-404__inner">
+                        <h1 class="page-404__title title-800 title-800--xl">
+                            <span class="page-404__subtitle">404</span>
+                            Page Not Found
+                        </h1>
+                        <p class="page-404__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mattis congue
+                            pretium faucibus leo nisl nulla pharetra nullam.
+                        </p>
+                        <a class="page-404__link btn btn--blue" href="#">
+                            Homepage
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            @include('components/_scroll-up/_scroll-up.html')
+
+        </main>
+
+        @include('components/_footer/_footer.html')
+
+    </div>
+
+    @include('components/_scripts/_scripts.html')
+
+</body>
+
+</html>
