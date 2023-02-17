@@ -1,5 +1,29 @@
 $(function () {
 
+    // --- sub menu mobile open  --- //
+
+    $('.arrow-features').on('click', function () {
+        $('.arrow-features,.sub-menu__list-features').toggleClass('open');
+    });
+
+    $('.sub-menu__list a').on('click', function () {
+        $('.arrow-features,.sub-menu__list-features').removeClass('open');
+    });
+
+
+
+
+    $('.arrow-pages').on('click', function () {
+        $('.arrow-pages,.sub-menu__list-pages').toggleClass('open');
+    });
+
+    $('.sub-menu__list a').on('click', function () {
+        $('.arrow-pages,.sub-menu__list-pages').removeClass('open');
+    });
+
+// --- sub menu mobile open  END --- //
+
+
     // --- scroll-up ---//
 
     // click

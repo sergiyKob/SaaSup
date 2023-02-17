@@ -29,18 +29,34 @@
             width: 100%;
             top: 0;
             right: -200%;
+            text-align: center;
             background-color: rgba(164, 104, 255, 1);
             display: block;
             overflow: auto;
             padding: 100px 0 20px;
-            -webkit-transition: right 0.6s ease 0s;
-            -o-transition: right 0.6s ease 0s;
-            transition: right 0.6s ease 0s;
-            text-align: center;
         }
 
         &.active {
             right: 0;
+
+            &::before {
+                content: "";
+                position: fixed;
+                width: 100%;
+                height: 111px;
+                top: 0;
+                left: 0;
+                background-color: rgba(164, 104, 255, 1);
+                z-index: 2;
+
+                @media (max-width: $md) {
+                    height: 81px;
+                }
+
+                @media (max-width: $sm) {
+                    height: 74px;
+                }
+            }
         }
     }
 
@@ -105,8 +121,6 @@
     }
 
     &__link {
-        display: flex;
-        align-items: center;
         color: inherit;
         transition: color 0.3s;
         padding: 0 5px;
@@ -127,12 +141,35 @@
             color: $color-primary-2;
         }
 
+        &-arrow {
+            @media (max-width: $lg) {
+                position: absolute;
+                top: 3px;
+                right: 10px;
+                width: 44px;
+                height: 44px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.open {
+                    .menu__link-icon {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+
         &-icon {
             width: 18px;
             height: 12px;
             fill: $color-secondary-4;
             margin-left: 5px;
-            transition: all 0.3s;
+            transition: transform 0.3s;
+
+            @media (max-width: $lg) {
+                margin-left: 0;
+            }
 
             &--secondary {
                 fill: $color-primary-2;
@@ -178,6 +215,16 @@
         top: 20px;
         left: 0;
         padding-top: 20px;
+
+        @media (max-width: $lg) {
+            position: static;
+            font-size: 16px;
+            padding-top: 0;
+
+            &.open {
+                display: block;
+            }
+        }
     }
 
     &__item {
@@ -190,6 +237,21 @@
         &:last-child {
             border-radius: 0 0 8px 8px;
         }
+
+        @media (max-width: $lg) {
+            padding: 0;
+
+            &:not(:last-child) {
+                border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+            }
+
+            &:first-child {
+                border-radius: 0;
+            }
+            &:last-child {
+                border-radius: 0;
+            }
+        }
     }
 
     &__link {
@@ -199,6 +261,7 @@
 
         @media (max-width: $lg) {
             display: block;
+            padding: 10px 0;
         }
 
         &:hover {
