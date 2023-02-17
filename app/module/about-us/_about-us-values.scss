@@ -1,19 +1,12 @@
 .about-us-values {
     padding-bottom: 200px;
 
-     @media (max-width: $xl) {
-        padding-bottom: 100px;;
+    @media (max-width: $xl) {
+        padding-bottom: 100px;
     }
 
-     @media (max-width: $lg) {
-        padding-bottom: 50px;;
-    }
-
-    &__heading {
-    }
-    &__subtitle {
-    }
-    &__title {
+    @media (max-width: $lg) {
+        padding-bottom: 50px;
     }
 
     &__values-list {
@@ -25,9 +18,6 @@
         @media (max-width: $sm) {
             gap: 30px;
         }
-    }
-
-    &__values-item {
     }
 }
 
@@ -67,23 +57,24 @@
             transform: translateX(-50%);
         }
     }
+
     &--1::before {
         background-image: url("../images/about-us/icon-values-1.jpg");
     }
+
     &--2::before {
         background-image: url("../images/about-us/icon-values-2.jpg");
     }
+
     &--3::before {
         background-image: url("../images/about-us/icon-values-3.jpg");
     }
+
     &--4::before {
         background-image: url("../images/about-us/icon-values-4.jpg");
     }
 
     &__title {
         margin-bottom: 10px;
-    }
-
-    &__text {
     }
 }

@@ -7,10 +7,9 @@
 @import "global";
 
 @import "../module/_header/_header";
-@import "../module/_menu-fixed/_menu-fixed";
+@import "../module/_decor/_decor";
 
 //-------- home-page --------//
-
 @import "../module/_homepage-main/_homepage-main";
 @import "../module/_homepage-features/_homepage-features";
 @import "../module/_homepage-about/_homepage-about";
@@ -18,10 +17,10 @@
 @import "../module/_homepage-testimonial/_homepage-testimonial";
 @import "../module/_homepage-pricing/_homepage-pricing";
 @import "../module/_newsletter/_newsletter";
-@import "../module/_home-page-blog/_home-page-blog";
+@import "../module/_homepage-blog/_homepage-blog";
+
 
 //-------- about-us page --------//
-
 @import "../module/about-us/_about-us-main";
 @import "../module/about-us/_about-us-info";
 @import "../module/about-us/_about-us-mission";
@@ -29,94 +28,58 @@
 @import "../module/about-us/_about-us-career";
 
 
-
 //-------- features page --------//
-
 @import "../module/_features/_features";
 @import "../module/_features/_features-integration";
 
 
 //-------- integration page --------//
-
 @import "../module/_integration/_integration-social";
 
 
-
 //-------- integration-facebook page --------//
-
 @import "../module/_integration/_integration-facebook";
 
 
 //-------- blog page --------//
-
 @import "../module/_blog/_blog";
 
 
 //-------- blog-single page --------//
-
 @import "../module/_blog-single/_blog-single";
 
 
 //-------- price page --------//
-
 @import "../module/_price/_pricing";
 
 
 //-------- price-advanced page --------//
-
 @import "../module/_price-advanced/_price-advanced";
 
 
-
 //-------- careers page --------//
-
 @import "../module/_careers/_careers-main";
 @import "../module/_careers/_careers-values";
 @import "../module/_careers/_careers-positions";
 
 
 //-------- web-designer page --------//
-
 @import "../module/_web-designer/_web-designer";
 
 
 //-------- contacts page --------//
-
 @import "../module/_contacts/_contacts-main";
 @import "../module/_contacts/_contacts-offices";
 @import "../module/_contacts/_faq";
 
 
 //-------- 404 page --------//
-
 @import "../module/_page-404/_page-404";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 @import "../module/_burger/_burger";
 @import "../module/_scroll-up/_scroll-up";
-
 @import "../module/_footer/_footer";
-
 
 

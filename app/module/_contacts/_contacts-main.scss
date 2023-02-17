@@ -16,7 +16,9 @@
     }
 
     &__title {
+        position: relative;
         max-width: 100%;
+        z-index: 1;
     }
 
     &__contacts-list {
@@ -47,6 +49,8 @@
         display: flex;
         justify-content: space-between;
         background-color: $color-secondary-4;
+        color: $color-primary-2;
+        font-weight: 700;
         border-radius: 40px;
         border: 1px solid #e8e8e8;
         padding: 58px 38px 58px 137px;
@@ -95,7 +99,7 @@
             background-image: url("../images/contacts/icons/mail.svg");
         }
 
-        &--call::before {
+        &--phone::before {
             background-image: url("../images/contacts/icons/call.svg");
         }
     }
@@ -111,14 +115,14 @@
     }
 
     &__contacts-link {
+        color: $color-secondary-3;
+        font-weight: 400;
+        padding-left: 10px;
         transition: color 0.3s;
 
         &:hover {
             color: $color-primary-1;
         }
-    }
-
-    &__form {
     }
 }
 
@@ -226,9 +230,6 @@
                 margin-bottom: 20px;
             }
         }
-    }
-
-    &__inputs-right {
     }
 
     &__btn {

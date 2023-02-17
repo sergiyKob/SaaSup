@@ -1,15 +1,7 @@
-.home-page-blog {
-    &__heading {
-        
-    }
-
-    &__title {}
-
-    &__subtitle {}
-
+.homepage-blog {
+    
     &__articles-box {
         display: flex;
-        align-items: center;
         gap: 40px;
 
         @media (max-width: $xl) {

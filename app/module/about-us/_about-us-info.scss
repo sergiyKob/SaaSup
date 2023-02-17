@@ -1,5 +1,6 @@
 .about-us-info {
     &__info-list {
+        
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -12,7 +13,7 @@
             padding: 50px 20px;
         }
 
-         @media (max-width: $sm) {
+        @media (max-width: $sm) {
             gap: 50px;
         }
     }
@@ -38,10 +39,12 @@
     }
 
     &__info-num {
+        white-space: nowrap;
         margin-bottom: 8px;
 
         span {
             color: $color-primary-1;
+            padding-left: 5px;
         }
     }
 }

@@ -23,8 +23,6 @@
             margin-bottom: 25px;
         }
     }
-    &__accordion {
-    }
 }
 
 .accordion {
@@ -34,12 +32,7 @@
     &__item {
         background-color: $color-secondary-4;
         border-radius: 20px;
-        padding: 26px 39px;
         transition: background-color 0.3s;
-
-        @media (max-width: $md) {
-            padding: 15px 20px;
-        }
 
         &:not(:last-child) {
             margin-bottom: 34px;
@@ -54,8 +47,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 10px;
+        padding: 26px 39px;
         cursor: pointer;
+
+        @media (max-width: $md) {
+            padding: 15px 20px;
+        }
 
         &.active {
             .accordion__item-trigger-icon {
@@ -70,8 +67,13 @@
 
     &__item-title {
         font-weight: 600;
+        line-height: 1.4;
         color: $color-primary-2;
         margin-right: 10px;
+
+        @media (max-width: $sm) {
+            font-size: 18px;
+        }
     }
 
     &__item-trigger {
@@ -103,5 +105,14 @@
 
     &__item-content {
         display: none;
+        padding: 0 93px 98px;
+
+        @media (max-width: $md) {
+            padding: 0 60px 45px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 0 25px 25px;
+        }
     }
 }

@@ -125,8 +125,19 @@
     <div class="wrapper">
 
         <main class="main">
+            <div class="decor">
+    <div class="decor__item decor__item--1 ">
+        <img src="images/decor/01.svg" alt="decor circle">
+    </div>
+    <div class="decor__item decor__item--2 ">
+        <img src="images/decor/02.svg" alt="decor circle">
+    </div>
+    <div class="decor__item decor__item--3 ">
+        <img src="images/decor/03.svg" alt="decor circle">
+    </div>
+</div>
        
-            <section class="pricing">
+            <section class="pricing section section--top">
     <div class="container">
         <div class="pricing__heading heading">
             <h1 class="pricing__heading-title title-800 title-800--xl">
@@ -174,10 +185,10 @@
                                 Team feedback history
                             </li>
                         </ul>
-                        <a class="pricing-card__link btn btn--border" href="#">
-                            Get Started
-                        </a>
                     </div>
+                    <a class="pricing-card__link btn btn--border" title="i'm a button" href="#">
+                        Get Started
+                    </a>
                 </article>
             </li>
             <li class="pricing__pricing-item">
@@ -221,10 +232,10 @@
                                 Slack integration
                             </li>
                         </ul>
-                        <a class="pricing-card__link btn btn--white" href="#">
-                            Get Started
-                        </a>
                     </div>
+                    <a class="pricing-card__link btn btn--white" href="#">
+                        Get Started
+                    </a>
                 </article>
             </li>
             <li class="pricing__pricing-item">
@@ -268,22 +279,273 @@
                                 Slack integration
                             </li>
                         </ul>
-                        <a class="pricing-card__link btn btn--border" href="#">
-                            Get Started
-                        </a>
                     </div>
+                    <a class="pricing-card__link btn btn--border" href="#">
+                        Get Started
+                    </a>
                 </article>
             </li>
         </ul>
+
+        <div class="pricing__table-wrap">
+            <table class="pricing__table table">
+                <caption class="table__title title-800 title-800--md">
+                    Compare pricing packages
+                </caption>
+                <thead>
+                    <tr class="table__row table__row-top">
+                        <th class="title-800 title-800--md">
+                            Features
+                        </th>
+                        <th class="title-800 title-800--md">
+                            Basic
+                            <div class="table__row-price">
+                                $ <span>7.99</span> / month
+                            </div>
+                        </th>
+                        <th class="title-800 title-800--md">
+                            Adv
+                            <div class="table__row-price">
+                                $ <span>10.99</span> / month
+                            </div>
+                        </th>
+                        <th class="title-800 title-800--md">
+                            Pro
+                            <div class="table__row-price">
+                                $ <span>15.99</span> / month
+                            </div>
+                        </th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__header-cell table__header-cell--blue">
+                            Analytics
+                        </th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Realtime analytics
+                        </th>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            User analytics
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Funnel optimization
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__header-cell table__header-cell--blue">
+                            Report
+                        </th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Automated
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            AI data predictions
+                        </th>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Advanced charts
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tbody>
+                    <tr class="table__row">
+                        <th class="table__header-cell table__header-cell--blue">
+                            Security
+                        </th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Real-time team reports
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Easy-to-share results
+                        </th>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header-cell">
+                            Team goal setting
+                        </th>
+                        <td>
+                            <svg class="close-icon">
+                                <use xlink:href="images/sprite.svg#close"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <svg class="tick-icon">
+                                <use xlink:href="images/sprite.svg#tick"></use>
+                            </svg>
+                        </td>
+                    </tr>
+                </tbody>
+    
+                <tfoot>
+                    <tr class="table__row table__row--bottom">
+                        <td></td>
+                        <td>
+                            <a class="btn btn--border" href="#"> Get Started</a>
+                        </td>
+                        <td>
+                            <a class="btn btn--border" href="#"> Get Started</a>
+                        </td>
+                        <td>
+                            <a class="btn btn--border" href="#"> Get Started</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </section>
 
-
-
             <div class="scroll-up">
-  <svg class="scroll-up__icon">
-    <use xlink:href="images/sprite.svg#arrow-up"></use>
-  </svg>
+    <svg class="scroll-up__icon">
+        <use xlink:href="images/sprite.svg#arrow-up"></use>
+    </svg>
+    <span class="sr-only">button up</span>
 </div>
 
         </main>
@@ -317,12 +579,12 @@
 
                   <ul class="contacts__phone-list">
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:987 6541 3654">
+                        <a class="contacts__phone-link" href="tel:98765413654">
                            +987 6541 3654
                         </a>
                      </li>
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:001 6547 6589">
+                        <a class="contacts__phone-link" href="tel:00165476589">
                            +001 6547 6589
                         </a>
                      </li>
@@ -444,6 +706,7 @@
                         <svg class="social__link-icon social__link-icon--facebook">
                            <use xlink:href="images/sprite.svg#facebook"></use>
                         </svg>
+                        <span class="sr-only">facebook link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -451,6 +714,7 @@
                         <svg class="social__link-icon social__link-icon--twitter">
                            <use xlink:href="images/sprite.svg#twitter"></use>
                         </svg>
+                        <span class="sr-only">twitter link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -458,6 +722,7 @@
                         <svg class="social__link-icon social__link-icon--linkedin">
                            <use xlink:href="images/sprite.svg#linkedin"></use>
                         </svg>
+                        <span class="sr-only">linkedin link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -465,6 +730,7 @@
                         <svg class="social__link-icon social__link-icon--instagram">
                            <use xlink:href="images/sprite.svg#instagram"></use>
                         </svg>
+                        <span class="sr-only">instagram link</span>
                      </a>
                   </li>
                </ul>

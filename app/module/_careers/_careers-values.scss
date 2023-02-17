@@ -1,13 +1,4 @@
 .careers-values {
-    &__heading {
-    }
-
-    &__subtitle {
-    }
-
-    &__title {
-    }
-
     &__values-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -115,8 +106,5 @@
         @media (max-width: $lg) {
             margin-bottom: 10px;
         }
-    }
-
-    &__values-text {
     }
 }

@@ -1,6 +1,4 @@
 .price-advanced {
-    
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -11,13 +9,14 @@
             flex-direction: column;
         }
     }
+
     &__left {
         max-width: 44%;
         margin-right: 15px;
 
         @media (max-width: $lg) {
             max-width: 100%;
-            margin-bottom: 40px;
+            margin: 0 0 40px 0;
         }
     }
 
@@ -141,7 +140,6 @@
     padding: 97px 47px;
     border-radius: 30px;
     background-color: $color-secondary-1;
-    
 
     @media (max-width: $xl) {
         max-width: 50%;
@@ -168,7 +166,24 @@
             font-size: 20px;
             margin-bottom: 20px;
         }
-        
+    }
+
+    &__label {
+        position: relative;
+
+        &::before {
+            @include pseudo;
+            background-image: url("../images/icons/triangle-down.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            width: 12px;
+            height: 12px;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
     }
 
     &__select {
@@ -181,14 +196,15 @@
         margin-bottom: 29px;
         cursor: pointer;
         outline: transparent;
-        transition: all 0.3s;
+        transition: border 0.3s;
+        appearance: none;
 
         @media (max-width: $xl) {
             width: 100%;
         }
 
         @media (max-width: $sm) {
-            padding: 11px 12px;
+            padding: 12px 29px;
             margin-bottom: 15px;
         }
 
@@ -207,12 +223,10 @@
         }
     }
 
-    &__price-currency {
-    }
-
     &__price-month {
         font-size: 20px;
     }
+
     &__btn {
         width: 85%;
 

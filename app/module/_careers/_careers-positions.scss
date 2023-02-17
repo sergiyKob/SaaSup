@@ -23,9 +23,6 @@
         }
     }
 
-    &__positions-item {
-    }
-
     &__card {
         padding: 60px 35px;
 
@@ -33,7 +30,7 @@
             padding: 40px 25px;
         }
 
-         @media (max-width: $sm) {
+        @media (max-width: $sm) {
             padding: 25px 20px;
         }
     }

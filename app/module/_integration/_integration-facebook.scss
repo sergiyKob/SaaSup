@@ -14,7 +14,6 @@
     }
 
     &__heading {
-
         &-wrap {
             display: flex;
             align-items: center;
@@ -42,8 +41,6 @@
             }
         }
 
-        &-title {
-        }
         &-text {
             @media (max-width: $sm) {
                 text-align: left;

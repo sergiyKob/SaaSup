@@ -5,17 +5,13 @@
         </h1>
         <ul class="contacts-main__contacts-list">
             <li class="contacts-main__contacts-item contacts-main__contacts-item--mail">
-                <div class="contacts-main__contacts-title">
-                    Mail Us
-                </div>
+                Mail Us
                 <a class="contacts-main__contacts-link" href="mailto:saasup@gmail.co">
                     saasup@gmail.co
                 </a>
             </li>
-            <li class="contacts-main__contacts-item contacts-main__contacts-item--call">
-                <div class="contacts-main__contacts-title">
-                    Call Us
-                </div>
+            <li class="contacts-main__contacts-item contacts-main__contacts-item--phone">
+                Call Us
                 <a class="contacts-main__contacts-link" href="tel:00165476589">
                     +001 6547 6589
                 </a>
@@ -27,28 +23,28 @@
                 <div class="form-contacts__inputs-left">
                     <label class="form-contacts__label">
                         Full name *
-                        <input class="form-contacts__input" type="text" placeholder="John David" required>
+                        <input class="form-contacts__input" type="text" name="name" placeholder="John David" required>
                     </label>
                     <label class="form-contacts__label">
                         Company *
-                        <input class="form-contacts__input" type="text" placeholder="yourcompany name here" required>
+                        <input class="form-contacts__input" type="text" name="company" placeholder="yourcompany name here" required>
                     </label>
                 </div>
                 <div class="form-contacts__inputs-right">
                     <label class="form-contacts__label">
                         Your email *
-                        <input class="form-contacts__input" type="email" placeholder="example@yourmail.com" required>
+                        <input class="form-contacts__input" type="email" name="email" placeholder="example@yourmail.com" required>
                     </label>
                     <label class="form-contacts__label">
                         Subject *
-                        <input class="form-contacts__input" type="text" placeholder="How can we Help" required>
+                        <input class="form-contacts__input" type="text" name="subject" placeholder="How can we Help" required>
                     </label>
                 </div>
             </div>
 
             <label class="form-contacts__label ">
                 Message *
-                <textarea class="form-contacts__input form-contacts__input--textarea" type="text" placeholder="Hello there,I would like to talk about how to..." required></textarea>
+                <textarea class="form-contacts__input form-contacts__input--textarea" name="message" placeholder="Hello there,I would like to talk about how to..." required></textarea>
             </label>
 
             <div class="form-contacts__btn">

@@ -1,5 +1,5 @@
 .homepage-main {
-    min-height: 100vh;
+    // min-height: 100vh;
     padding-top: 277px;
     position: relative;
 
@@ -8,10 +8,10 @@
     }
 
     @media (max-width: $lg) {
-        padding-top: 110px;
+        padding-top: 140px;
     }
 
-     @media (max-width: $sm) {
+    @media (max-width: $sm) {
         padding-top: 90px;
     }
 
@@ -39,11 +39,12 @@
         @media (max-width: $lg) {
             width: 75%;
             height: 36%;
+            opacity: 0.7;
         }
 
-        @media (max-width: $sm) {
+        @media (max-width: $xs) {
             width: 75%;
-            height: 26%;
+            height: 25%;
         }
     }
 
@@ -60,17 +61,28 @@
     }
 
     &__content {
+        max-width: 43%;
         margin-right: 24px;
 
+        @media (max-width: $xl) {
+            max-width: 48%;
+        }
+
         @media (max-width: $lg) {
-            margin: 0 0 10px 0;
+            max-width: 80%;
+            margin: 0 0 25px 0;
+        }
+
+        @media (max-width: $md) {
+            max-width: 100%;
+            margin: 0 0 25px 0;
         }
     }
 
     &__title {
         margin-bottom: 17px;
     }
-    
+
     &__text {
         font-size: 25px;
         margin-bottom: 48px;
@@ -87,11 +99,17 @@
 
     &__box-link {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
+        gap: 12px;
     }
 
     &__link {
         margin-right: 12px;
+
+        @media (max-width: $xs) {
+            margin-right: 0;
+        }
 
         &-video {
             padding: 8px 8px 8px 31px;
@@ -111,7 +129,7 @@
             }
 
             &:focus {
-                box-shadow: 0px 0px 0px 3px rgba(36, 35, 49, 1);
+                box-shadow: 0px 0px 0px 2px rgba(36, 35, 49, 1);
             }
 
             &:active {
@@ -155,11 +173,27 @@
     }
 
     &__img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 770px;
+        height: 584px;
         border-radius: 40px;
-        max-width: 55%;
+
+        @media (max-width: $xl) {
+            height: 450px;
+        }
 
         @media (max-width: $lg) {
-            max-width: 100%;
+            width: 80%;
+        }
+
+        @media (max-width: $md) {
+            width: 100%;
+        }
+
+        @media (max-width: $sm) {
+            height: 280px;
         }
     }
 

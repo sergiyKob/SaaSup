@@ -1,11 +1,8 @@
-.header {
-}
-
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 15px;
+    padding: 60px 15px 60px 10px;
     position: absolute;
     top: 0;
     right: 0;
@@ -25,6 +22,7 @@
 
     &__inner {
         display: flex;
+
         @media (max-width: $lg) {
             position: fixed;
             height: 100%;
@@ -86,12 +84,14 @@
         position: relative;
         transition: all 0.3s;
 
-        &:hover {
-            .sub-menu__list {
-                display: block;
-            }
-            .menu__link-icon {
-                transform: rotate(180deg);
+        @media (min-width: $lg) {
+            &:hover {
+                .sub-menu__list {
+                    display: block;
+                }
+                .menu__link-icon {
+                    transform: rotate(180deg);
+                }
             }
         }
 
@@ -155,9 +155,6 @@
                 }
             }
 
-            &:focus {
-            }
-
             &:active {
                 color: rgba(82, 54, 255, 0.5);
             }
@@ -184,7 +181,7 @@
     }
 
     &__item {
-        background-color: rgba(105, 80, 255, 0.8);
+        background-color: rgba(105, 80, 255, 1);
         padding: 0 5px;
 
         &:first-child {
@@ -200,14 +197,13 @@
         padding: 8px 0;
         transition: all 0.3s;
 
+        @media (max-width: $lg) {
+            display: block;
+        }
+
         &:hover {
             color: $color-primary-2;
         }
-
-        // &:focus {
-        //    border-radius: 39px;
-        //    box-shadow: 0px 0px 0px 2px rgba(82, 54, 255, 0.5);
-        // }
 
         &:active {
             color: rgba(36, 35, 49, 0.5);

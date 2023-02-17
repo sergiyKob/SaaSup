@@ -125,6 +125,17 @@
     <div class="wrapper">
 
         <main class="main">
+            <div class="decor">
+    <div class="decor__item decor__item--1 ">
+        <img src="images/decor/01.svg" alt="decor circle">
+    </div>
+    <div class="decor__item decor__item--2 ">
+        <img src="images/decor/02.svg" alt="decor circle">
+    </div>
+    <div class="decor__item decor__item--3 ">
+        <img src="images/decor/03.svg" alt="decor circle">
+    </div>
+</div>
 
             <section class="contacts-main section section--top">
     <div class="container">
@@ -133,17 +144,13 @@
         </h1>
         <ul class="contacts-main__contacts-list">
             <li class="contacts-main__contacts-item contacts-main__contacts-item--mail">
-                <div class="contacts-main__contacts-title">
-                    Mail Us
-                </div>
+                Mail Us
                 <a class="contacts-main__contacts-link" href="mailto:saasup@gmail.co">
                     saasup@gmail.co
                 </a>
             </li>
-            <li class="contacts-main__contacts-item contacts-main__contacts-item--call">
-                <div class="contacts-main__contacts-title">
-                    Call Us
-                </div>
+            <li class="contacts-main__contacts-item contacts-main__contacts-item--phone">
+                Call Us
                 <a class="contacts-main__contacts-link" href="tel:00165476589">
                     +001 6547 6589
                 </a>
@@ -155,28 +162,28 @@
                 <div class="form-contacts__inputs-left">
                     <label class="form-contacts__label">
                         Full name *
-                        <input class="form-contacts__input" type="text" placeholder="John David" required>
+                        <input class="form-contacts__input" type="text" name="name" placeholder="John David" required>
                     </label>
                     <label class="form-contacts__label">
                         Company *
-                        <input class="form-contacts__input" type="text" placeholder="yourcompany name here" required>
+                        <input class="form-contacts__input" type="text" name="company" placeholder="yourcompany name here" required>
                     </label>
                 </div>
                 <div class="form-contacts__inputs-right">
                     <label class="form-contacts__label">
                         Your email *
-                        <input class="form-contacts__input" type="email" placeholder="example@yourmail.com" required>
+                        <input class="form-contacts__input" type="email" name="email" placeholder="example@yourmail.com" required>
                     </label>
                     <label class="form-contacts__label">
                         Subject *
-                        <input class="form-contacts__input" type="text" placeholder="How can we Help" required>
+                        <input class="form-contacts__input" type="text" name="subject" placeholder="How can we Help" required>
                     </label>
                 </div>
             </div>
 
             <label class="form-contacts__label ">
                 Message *
-                <textarea class="form-contacts__input form-contacts__input--textarea" type="text" placeholder="Hello there,I would like to talk about how to..." required></textarea>
+                <textarea class="form-contacts__input form-contacts__input--textarea" name="message" placeholder="Hello there,I would like to talk about how to..." required></textarea>
             </label>
 
             <div class="form-contacts__btn">
@@ -187,6 +194,7 @@
         </form>
     </div>
 </section>
+
             <section class="contacts-offices section">
     <div class="container">
         <h2 class="contacts-offices__title title-800 title-800--lg heading">
@@ -241,106 +249,123 @@
         <div class="faq__accordion accordion">
             <div class="accordion__item">
                 <div class="accordion__item-top one">
-                    <h4 class="accordion__item-title title-800 title-800--sm">
+                    <h3 class="accordion__item-title title-800 title-800--sm">
                         Where is my order? Quisque molestie
-                    </h4>
+                    </h3>
                     <button class="accordion__item-trigger">
                         <svg class="accordion__item-trigger-icon">
-                          <use xlink:href="images/sprite.svg#arrow-left"></use>
+                            <use xlink:href="images/sprite.svg#arrow-left"></use>
                         </svg>
+                        <span class="sr-only">accordion trigger</span>
                     </button>
                 </div>
                 <p class="accordion__item-content">
-                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text. All the
-                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on
+                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the
+                    middle of text. All the
+                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true generator on
                     the Internet.
                 </p>
             </div>
             <div class="accordion__item">
                 <div class="accordion__item-top">
-                    <h4 class="accordion__item-title title-800 title-800--sm">
+                    <h3 class="accordion__item-title title-800 title-800--sm">
                         How can I return an item purchased online?
-                    </h4>
+                    </h3>
                     <button class="accordion__item-trigger">
                         <svg class="accordion__item-trigger-icon">
                             <use xlink:href="images/sprite.svg#arrow-left"></use>
                         </svg>
+                        <span class="sr-only">accordion trigger</span>
                     </button>
                 </div>
                 <p class="accordion__item-content">
-                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text.
+                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the
+                    middle of text.
                     All the
-                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true
                     generator on
-                    the Internet.
+                    the Internet. 
                 </p>
             </div>
             <div class="accordion__item">
                 <div class="accordion__item-top">
-                    <h4 class="accordion__item-title title-800 title-800--sm">
+                    <h3 class="accordion__item-title title-800 title-800--sm">
                         Can I cancel or change my order?
-                    </h4>
+                    </h3>
                     <button class="accordion__item-trigger">
                         <svg class="accordion__item-trigger-icon">
                             <use xlink:href="images/sprite.svg#arrow-left"></use>
                         </svg>
+                        <span class="sr-only">accordion trigger</span>
                     </button>
                 </div>
                 <p class="accordion__item-content">
-                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text.
+                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the
+                    middle of text.
                     All the
-                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true
                     generator on
-                    the Internet.
+                    the Internet. 
                 </p>
             </div>
             <div class="accordion__item">
                 <div class="accordion__item-top">
-                    <h4 class="accordion__item-title title-800 title-800--sm">
+                    <h3 class="accordion__item-title title-800 title-800--sm">
                         I have a promotional or discount code?
-                    </h4>
+                    </h3>
                     <button class="accordion__item-trigger">
                         <svg class="accordion__item-trigger-icon">
                             <use xlink:href="images/sprite.svg#arrow-left"></use>
                         </svg>
+                        <span class="sr-only">accordion trigger</span>
                     </button>
                 </div>
                 <p class="accordion__item-content">
-                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text.
+                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the
+                    middle of text.
                     All the
-                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true
                     generator on
-                    the Internet.
+                    the Internet. 
                 </p>
             </div>
             <div class="accordion__item">
                 <div class="accordion__item-top">
-                    <h4 class="accordion__item-title title-800 title-800--sm">
+                    <h3 class="accordion__item-title title-800 title-800--sm">
                         Can I integrate my store with Facebook?
-                    </h4>
+                    </h3>
                     <button class="accordion__item-trigger">
                         <svg class="accordion__item-trigger-icon">
                             <use xlink:href="images/sprite.svg#arrow-left"></use>
                         </svg>
+                        <span class="sr-only">accordion trigger</span>
                     </button>
                 </div>
                 <p class="accordion__item-content">
-                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the middle of text.
+                    The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing hidden in the
+                    middle of text.
                     All the
-                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+                    Lorem generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                    first true
                     generator on
-                    the Internet.
+                    the Internet. The are going to use a passage of Lorem Ipsum, you need to be sure tdembarrassing
+          
                 </p>
             </div>
-      
+
         </div>
     </div>
 </section>
      
             <div class="scroll-up">
-  <svg class="scroll-up__icon">
-    <use xlink:href="images/sprite.svg#arrow-up"></use>
-  </svg>
+    <svg class="scroll-up__icon">
+        <use xlink:href="images/sprite.svg#arrow-up"></use>
+    </svg>
+    <span class="sr-only">button up</span>
 </div>
 
         </main>
@@ -374,12 +399,12 @@
 
                   <ul class="contacts__phone-list">
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:987 6541 3654">
+                        <a class="contacts__phone-link" href="tel:98765413654">
                            +987 6541 3654
                         </a>
                      </li>
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:001 6547 6589">
+                        <a class="contacts__phone-link" href="tel:00165476589">
                            +001 6547 6589
                         </a>
                      </li>
@@ -501,6 +526,7 @@
                         <svg class="social__link-icon social__link-icon--facebook">
                            <use xlink:href="images/sprite.svg#facebook"></use>
                         </svg>
+                        <span class="sr-only">facebook link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -508,6 +534,7 @@
                         <svg class="social__link-icon social__link-icon--twitter">
                            <use xlink:href="images/sprite.svg#twitter"></use>
                         </svg>
+                        <span class="sr-only">twitter link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -515,6 +542,7 @@
                         <svg class="social__link-icon social__link-icon--linkedin">
                            <use xlink:href="images/sprite.svg#linkedin"></use>
                         </svg>
+                        <span class="sr-only">linkedin link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -522,6 +550,7 @@
                         <svg class="social__link-icon social__link-icon--instagram">
                            <use xlink:href="images/sprite.svg#instagram"></use>
                         </svg>
+                        <span class="sr-only">instagram link</span>
                      </a>
                   </li>
                </ul>

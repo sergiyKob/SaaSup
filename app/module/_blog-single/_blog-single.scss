@@ -21,7 +21,6 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
-        padding-right: 105px;
 
         @media (max-width: $xxl) {
             padding-right: 0;
@@ -41,7 +40,7 @@
     }
 
     &__title {
-        max-width: 64%;
+        max-width: 62%;
         margin-right: 10px;
 
         @media (max-width: $md) {
@@ -82,9 +81,6 @@
         }
     }
 
-    &__author {
-    }
-
     &__author-img {
         border-radius: 100%;
         margin-right: 12px;
@@ -122,9 +118,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-    }
-
-    &__tags-item {
     }
 
     &__tags-link {
@@ -272,8 +265,8 @@
         }
 
         @media (max-width: $sm) {
-            font-size: 20px;
-            padding: 15px;
+            font-size: 18px;
+            padding: 30px 15px;
         }
     }
 }
@@ -297,12 +290,6 @@
         margin-bottom: 54px;
     }
 
-    &__title {
-    }
-
-    &__link {
-    }
-
     &__post-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -312,8 +299,5 @@
         @media (max-width: $md) {
             grid-template-columns: repeat(1, 1fr);
         }
-    }
-
-    &__post-item {
     }
 }

@@ -126,6 +126,7 @@
 
         <main class="main">
 
+
             <section class="price-advanced section section--top">
                 <div class="container">
                     <div class="price-advanced__inner">
@@ -161,13 +162,15 @@
                                 Lorem ipsum dolor sit amet consectet udipiscing elit terdum
                             </p>
                             <form class="duration__form">
-                                <select class="duration__select">
-                                    <option disabled selected>Select Plan Duration</option>
-                                    <option>1</option>
-                                    <option>3</option>
-                                    <option>6</option>
-                                    <option>12</option>
-                                </select>
+                                <label class="duration__label">
+                                    <select class="duration__select" name="duration">
+                                        <option disabled selected>Select Plan Duration</option>
+                                        <option>1</option>
+                                        <option>3</option>
+                                        <option>6</option>
+                                        <option>12</option>
+                                    </select>
+                                </label>
                             </form>
                             <div class="duration__price title-800 title-800--xl">
                                 <span class="duration__price-currency">$</span>
@@ -203,7 +206,8 @@
                             </li>
                         </ol>
                         <p class="price-advanced__content-text">
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                            There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form.
                         </p>
 
                     </div>
@@ -213,9 +217,10 @@
 
 
             <div class="scroll-up">
-  <svg class="scroll-up__icon">
-    <use xlink:href="images/sprite.svg#arrow-up"></use>
-  </svg>
+    <svg class="scroll-up__icon">
+        <use xlink:href="images/sprite.svg#arrow-up"></use>
+    </svg>
+    <span class="sr-only">button up</span>
 </div>
 
         </main>
@@ -249,12 +254,12 @@
 
                   <ul class="contacts__phone-list">
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:987 6541 3654">
+                        <a class="contacts__phone-link" href="tel:98765413654">
                            +987 6541 3654
                         </a>
                      </li>
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:001 6547 6589">
+                        <a class="contacts__phone-link" href="tel:00165476589">
                            +001 6547 6589
                         </a>
                      </li>
@@ -376,6 +381,7 @@
                         <svg class="social__link-icon social__link-icon--facebook">
                            <use xlink:href="images/sprite.svg#facebook"></use>
                         </svg>
+                        <span class="sr-only">facebook link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -383,6 +389,7 @@
                         <svg class="social__link-icon social__link-icon--twitter">
                            <use xlink:href="images/sprite.svg#twitter"></use>
                         </svg>
+                        <span class="sr-only">twitter link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -390,6 +397,7 @@
                         <svg class="social__link-icon social__link-icon--linkedin">
                            <use xlink:href="images/sprite.svg#linkedin"></use>
                         </svg>
+                        <span class="sr-only">linkedin link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -397,6 +405,7 @@
                         <svg class="social__link-icon social__link-icon--instagram">
                            <use xlink:href="images/sprite.svg#instagram"></use>
                         </svg>
+                        <span class="sr-only">instagram link</span>
                      </a>
                   </li>
                </ul>

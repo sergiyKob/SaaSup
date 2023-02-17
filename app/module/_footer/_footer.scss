@@ -73,7 +73,6 @@
     &__utility-title {
         margin-bottom: 32px;
 
-
         @media (max-width: $sm) {
             font-size: 20px;
             margin-bottom: 7px;
@@ -120,17 +119,6 @@
         &:active {
             color: rgba(82, 54, 255, 0.5);
         }
-    }
-
-    &__utility {
-    }
-    &__utility-title {
-    }
-    &__utility-list {
-    }
-    &__utility-item {
-    }
-    &__utility-link {
     }
 
     &__app {
@@ -240,8 +228,6 @@
                 font-size: 16px;
             }
         }
-        &-social {
-        }
     }
 }
 
@@ -323,9 +309,6 @@
         @media (max-width: $lg) {
             gap: 25px;
         }
-    }
-
-    &__item {
     }
 
     &__link {

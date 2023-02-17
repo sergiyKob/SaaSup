@@ -30,8 +30,6 @@
         &-employment-type {
             color: $color-primary-1;
         }
-        &-link {
-        }
     }
 
     &__content {
@@ -65,9 +63,6 @@
             }
         }
 
-        &-top-title {
-        }
-
         &-title {
             margin-bottom: 26px;
 
@@ -76,7 +71,7 @@
             }
         }
 
-        &-date {
+        &-posted {
             font-size: 20px;
             color: $color-primary-2;
 
@@ -131,17 +126,6 @@
             color: $color-primary-2;
             font-weight: 700;
             margin-bottom: 10px;
-        }
-
-        &-list {
-        }
-        &-item {
-        }
-        &-mail {
-        }
-        &-phone {
-        }
-        &-link {
         }
     }
 }

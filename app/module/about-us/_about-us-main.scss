@@ -5,7 +5,7 @@
         padding: 120px 0 80px;
     }
 
-     @media (max-width: $sm) {
+    @media (max-width: $sm) {
         padding: 85px 0 50px;
     }
 
@@ -44,14 +44,6 @@
         }
     }
 
-    &__img {
-        &-left {
-        }
-
-        &-right {
-        }
-    }
-
     &__bottom {
         display: flex;
         justify-content: space-between;
@@ -69,16 +61,15 @@
                 max-width: 70%;
             }
 
-             @media (max-width: $lg) {
+            @media (max-width: $lg) {
                 max-width: 100%;
             }
         }
 
         &-title {
-
-             @media (max-width: $lg) {
-                    margin-bottom: 20px;
-                }
+            @media (max-width: $lg) {
+                margin-bottom: 20px;
+            }
         }
 
         &-text {

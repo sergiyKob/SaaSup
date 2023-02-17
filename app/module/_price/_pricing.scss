@@ -1,18 +1,116 @@
 .pricing {
-    padding: 305px 0 200px;
+    &__pricing-list {
+        margin-bottom: 200px;
+    }
 
-  &__heading {}
-
-  &__heading-title {}
-
-  &__heading-text {}
-
-  &__pricing-list {
-   
-  }
-
-  &__pricing-item {}
-
+    &__table-wrap {
+        overflow-x: auto;
+    }
 }
 
+.table {
+    width: 100%;
+    border-radius: 50px;
+    border-collapse: collapse;
+    background-color: $color-secondary-1;
 
+    td {
+        text-align: center;
+    }
+
+    &__title {
+        line-height: 1.23;
+        margin-bottom: 80px;
+    }
+
+    &__row {
+        &:nth-child(even) {
+            background: $color-secondary-4;
+        }
+    }
+
+    &__row-price {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.1;
+        margin-top: 7px;
+
+        @media (max-width: $md) {
+            font-size: 18px;
+        }
+    }
+
+    &__row-top {
+        th {
+            text-align: center;
+            padding: 53px 0;
+            border-bottom: 1px solid #d3d3d3;
+
+            @media (max-width: $md) {
+                padding: 30px 0;
+            }
+        }
+
+        th:first-child {
+            text-align: left;
+            padding-left: 60px;
+
+            @media (max-width: $lg) {
+                padding-left: 30px;
+            }
+        }
+    }
+
+    &__row--bottom {
+        td {
+            padding: 50px 5px;
+
+            @media (max-width: $sm) {
+                padding: 30px 5px;
+            }
+        }
+    }
+
+    &__header-cell {
+        padding: 35px 0 35px 60px;
+        font-size: 20px;
+        line-height: 1.35;
+        font-weight: 400;
+        text-align: left;
+
+        @media (max-width: $lg) {
+            padding: 35px 0 35px 30px;
+        }
+
+        @media (max-width: $md) {
+            padding: 20px 0 20px 30px;
+            font-size: 18px;
+        }
+
+        @media (max-width: $sm) {
+            padding: 20px 0 20px 15px;
+            font-size: 16px;
+        }
+
+        &--blue {
+            color: $color-primary-1;
+            font-weight: 600;
+        }
+    }
+}
+
+.tick-icon,
+.close-icon {
+    width: 28px;
+    height: 28px;
+    fill: transparent;
+    stroke-width: 3px;
+}
+
+.tick-icon {
+    stroke: #31c65b;
+}
+
+.close-icon {
+    stroke: #bebebe;
+}

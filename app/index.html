@@ -108,7 +108,7 @@
                </li>
             </ul>
 
-            <button class="menu__btn btn btn--white">
+            <button class="menu__btn btn btn--white" type="button">
                Sign In
             </button>
 
@@ -153,7 +153,7 @@
                     </a>
                 </div>
             </div>
-            <img class="homepage-main__img" src="images/homepage-img.jpg" alt="img graphs">
+            <div class="homepage-main__img" style="background-image: url('images/homepage-img.jpg');"></div>
         </div>
     </div>
     <div class="homepage-main__decor">
@@ -171,7 +171,7 @@
             <section class="homepage-features section">
     <div class="container">
         <div class="homepage-features__heading heading">
-            <div class="homepage-features__subtitle subtitle">
+            <div class="homepage-features__label-section label-section">
                 Features
             </div>
             <h2 class="homepage-features__title title-800 title-800--lg">
@@ -261,7 +261,7 @@
             <section class="homepage-how section">
     <div class="container">
         <div class="homepage-how__heading heading">
-            <div class="homepage-how__subtitle subtitle">
+            <div class="homepage-how__label-section label-section">
                 How It Work
             </div>
             <h2 class="homepage-how__title title-800 title-800--lg">
@@ -368,7 +368,7 @@
             <section class="homepage-testimonial section">
     <div class="container">
         <div class="homepage-testimonial__heading heading">
-            <div class="homepage-testimonial__subtitle subtitle">
+            <div class="homepage-testimonial__label-section label-section">
                 Testimonial
             </div>
             <h2 class="homepage-testimonial__title title-800 title-800--lg ">
@@ -456,7 +456,7 @@
       <div class="homepage-pricing__inner">
          <div class="homepage-pricing__content">
             <div class="homepage-pricing__heading">
-                <div class="homepage-pricing__subtitle subtitle">
+                <div class="homepage-pricing__label-section label-section">
                    Pricing
                 </div>
                 <h2 class="homepage-pricing__title title-800 title-800--lg">
@@ -528,10 +528,10 @@
                         Team feedback history
                      </li>
                   </ul>
-                  <a class="pricing-card__link btn btn--border" href="#">
-                     Get Started
-                  </a>
-               </div>
+                </div>
+                <a class="pricing-card__link btn btn--border" href="#">
+                   Get Started
+                </a>
             </article>
             <article class="pricing-card">
                <div class="pricing-card__top">
@@ -573,10 +573,10 @@
                         Slack integration
                      </li>
                   </ul>
-                  <a class="pricing-card__link btn btn--border" href="#">
-                     Get Started
-                  </a>
-               </div>
+                </div>
+                <a class="pricing-card__link btn btn--border" href="#">
+                   Get Started
+                </a>
             </article>
          </div>
       </div>
@@ -610,17 +610,17 @@
       </div>
    </div>
 </section>
-            <section class="home-page-blog section">
+            <section class="homepage-blog section">
     <div class="container">
-        <div class="home-page-blog__heading heading">
-            <div class="home-page-blog__subtitle subtitle">
+        <div class="homepage-blog__heading heading">
+            <div class="homepage-blog__label-section label-section">
                 blog
             </div>
-            <h2 class="home-page-blog__title title-800 title-800--lg">
+            <h2 class="homepage-blog__title title-800 title-800--lg">
                 Most popular articles
             </h2>
         </div>
-        <div class="home-page-blog__articles-box">
+        <div class="homepage-blog__articles-box">
             <article class="article-card">
                 <div class="article-card__head">
                     <a class="article-card__link-img" href="#">
@@ -651,14 +651,12 @@
                     </a>
                     <p class="article-card__text">
                         It is a long established fact that a reader will be distracted by the readable content of a page
-                        from
-                        when looking at it
-                        layout. The point of using Lorem Ipsum
+
                     </p>
-                    <a class="article-card__link" href="#">
-                        Read More
-                    </a>
                 </div>
+                <a class="article-card__link" href="#">
+                    Read More
+                </a>
             </article>
 
             <article class="article-card">
@@ -690,23 +688,21 @@
                     </a>
                     <p class="article-card__text">
                         It is a long established fact that a reader will be distracted by the readable content of a page
-                        from
-                        when looking at it
-                        layout. The point of using Lorem Ipsum
                     </p>
-                    <a class="article-card__link" href="#">
-                        Read More
-                    </a>
                 </div>
+                <a class="article-card__link" href="#">
+                    Read More
+                </a>
             </article>
         </div>
     </div>
 </section>
 
             <div class="scroll-up">
-  <svg class="scroll-up__icon">
-    <use xlink:href="images/sprite.svg#arrow-up"></use>
-  </svg>
+    <svg class="scroll-up__icon">
+        <use xlink:href="images/sprite.svg#arrow-up"></use>
+    </svg>
+    <span class="sr-only">button up</span>
 </div>
 
         </main>
@@ -740,12 +736,12 @@
 
                   <ul class="contacts__phone-list">
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:987 6541 3654">
+                        <a class="contacts__phone-link" href="tel:98765413654">
                            +987 6541 3654
                         </a>
                      </li>
                      <li class="contacts__phone-item">
-                        <a class="contacts__phone-link" href="tel:001 6547 6589">
+                        <a class="contacts__phone-link" href="tel:00165476589">
                            +001 6547 6589
                         </a>
                      </li>
@@ -867,6 +863,7 @@
                         <svg class="social__link-icon social__link-icon--facebook">
                            <use xlink:href="images/sprite.svg#facebook"></use>
                         </svg>
+                        <span class="sr-only">facebook link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -874,6 +871,7 @@
                         <svg class="social__link-icon social__link-icon--twitter">
                            <use xlink:href="images/sprite.svg#twitter"></use>
                         </svg>
+                        <span class="sr-only">twitter link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -881,6 +879,7 @@
                         <svg class="social__link-icon social__link-icon--linkedin">
                            <use xlink:href="images/sprite.svg#linkedin"></use>
                         </svg>
+                        <span class="sr-only">linkedin link</span>
                      </a>
                   </li>
                   <li class="social__item">
@@ -888,6 +887,7 @@
                         <svg class="social__link-icon social__link-icon--instagram">
                            <use xlink:href="images/sprite.svg#instagram"></use>
                         </svg>
+                        <span class="sr-only">instagram link</span>
                      </a>
                   </li>
                </ul>
